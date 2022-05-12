@@ -1,0 +1,132 @@
+// Font variables
+$headerfont: "Basement Grotesque", sans-serif;
+$mainfont: "Spline Sans", sans-serif;
+
+// Color variables
+$black: #000000;
+$darkgrey: #1d1d1d;
+$white: #ffffff;
+$green: #0bec56;
+
+// Html and body
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+*,
+*::after,
+*::before {
+    // Recommended from CSS-TRICKS
+    box-sizing: border-box;
+}
+
+// Wrapper
+.wrapper {
+    padding: 0px 120px 0px 120px;
+}
+
+// Text
+h1 {
+    color: $white;
+    font-family: $headerfont;
+    font-size: 3rem;
+}
+
+h2 {
+    color: $white;
+    font-family: $headerfont;
+    font-size: 2rem;
+}
+
+h3 {
+    color: $white;
+    font-family: $headerfont;
+    font-size: 1.125rem;
+}
+
+h4 {
+    color: $white;
+    font-family: $headerfont;
+    font-size: 1rem;
+}
+
+h5 {
+    color: $white;
+    font-family: $mainfont;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+p {
+    color: $white;
+    font-family: $mainfont;
+    font-size: 1rem;
+}
+
+// Links
+.links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-family: $mainfont;
+    font-weight: 800;
+    color: $white;
+    margin: 0 0.875rem;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+    
+    &:hover {
+        color: $green;
+    }
+}
+
+// Navbar
+nav {
+    font-family: $mainfont;
+    height: 60px;
+    width: 100%;
+    position: relative; // Previously was absolute, so change if you need to.
+    top: 0px;
+    z-index: 10;
+    background-color: $black;
+}
+
+nav .inner-nav {
+    display: flex;
+    align-items: center; // Centers nav items vertically
+    justify-content: space-between; // Space between the logo and the navigation
+    height: 60px;
+    padding: 0px 120px 0px 120px;
+}
+
+nav a:active {
+    color: orange;
+}
+
+// Footer
+footer {
+    font-family: $mainfont;
+    height: 60px;
+    width: 100%;
+    top: 0px;
+    position: relative;
+    z-index: 11;
+    background-color: $black;
+}
+
+footer .inner-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0px 120px 0px 120px;
+}

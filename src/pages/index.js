@@ -1,14 +1,17 @@
 import React from "react"
 import Layout from '../components/Layout'
+import Wrapper from '../components/Wrapper'
 
 export default function Home() {
   return (
     <Layout>
-      <section>
-        <div>
-          <h1>Hello world</h1>
-        </div>
-      </section>
+      <Wrapper>
+        <section>
+          <div>
+            <h1>Hello world</h1>
+          </div>
+        </section>
+      </Wrapper>
     </Layout>
   )
 }
