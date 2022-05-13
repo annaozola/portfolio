@@ -6,6 +6,7 @@ module.exports = {
     copyright: 'Copyright 2022 Anna Ozola',
   },
   plugins: [
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
