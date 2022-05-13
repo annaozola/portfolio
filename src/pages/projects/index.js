@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <Layout>
       <Wrapper>
-        <section>
+        <section className={styles.projects}>
           <div className={styles.header}>
               <h1>Projects</h1>
           </div>
