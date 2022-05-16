@@ -4,3 +4,17 @@
 }
 
 // Portfolio => Categories => Tags => Gallery
+
+// TNN Setup - Change to yours later
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    margin: 80px 20px;
+}
+
+.gallery a {
+    text-align: center;
+    margin: 20px auto 0px;
+    text-decoration: none;
+}

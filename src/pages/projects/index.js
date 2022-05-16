@@ -1,9 +1,12 @@
+import { graphql, Link } from 'gatsby'
 import React from 'react'
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper'
 import * as styles from '../../styles/projects.module.scss'
 
-export default function Projects() {
+export default function Projects({ data }) {
+  console.log(data)
+  const projects = data.allMarkdownRemark.nodes
   return (
     <Layout>
       <Wrapper>
@@ -13,13 +16,22 @@ export default function Projects() {
           </div>
           <div className={styles.portfolio}>
             <div className={styles.categories}>
-              <p>test</p>
+              <p>Categories will be placed here</p>
             </div>
             <div className={styles.tags}>
-              <p>test</p>
+              <p>Tags will be placed here</p>
             </div>
             <div className={styles.gallery}>
-              <p>gallery here</p>
+              <p>This is where the gallery is</p>
+              <div>
+                {projects.map(project =>(
+                  <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
+                    <div>
+                      <h3>{ project.frontmatter.title }</h3>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -27,3 +39,20 @@ export default function Projects() {
     </Layout>
   )
 }
+
+// export page query
+export const query = graphql`
+  query ProjectsPage {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+      nodes {
+        frontmatter {
+          category
+          slug
+          tags
+          title
+        }
+        id
+      }
+    }
+  }
+`

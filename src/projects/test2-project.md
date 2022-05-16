@@ -3,6 +3,7 @@ title: Test2 Project
 category: Web Design & Development
 tags: React, GatsbyJS, SCSS
 slug: test2-project
+date: 2021-02-03T00:00:00.000Z
 ---
 
 ## This is a heading.
