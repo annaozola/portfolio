@@ -1,0 +1,145 @@
+// Resume
+.resume {
+    .header {
+        grid-column: 1/5;
+        padding: 8.25em 0 4.625em 0;
+
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .info {
+        padding: 0 0 5em 0; //configure later
+
+        &__contacts {
+            grid-column: 1/2;
+
+            span {
+                font-weight: 800;
+            }
+        }
+
+        &__socials {
+            &__one {
+                grid-column: 2/3;
+            }
+            &__two {
+                grid-column: 3/5;
+            }
+        }
+    }
+
+    .skills {
+        padding: 0 0 5em 0; // configure later
+
+        &__header {
+            padding: 0 0 1.2em 0; // configure later
+            grid-column: 1/5;
+        }
+
+        &__prglng {
+            &__one {
+                grid-column: 1/2;
+            }
+            
+            &__two {
+                grid-column: 2/5;
+            }
+        }
+
+        &__lang {
+            &__one {
+                grid-column: 1/2;
+            }
+
+            &__two {
+                grid-column: 2/5;
+            }
+        }
+
+        &__apps {
+            &__headings {
+
+                &__one {
+                    grid-column: 1/2;
+                }
+
+                &__two {
+                    grid-column: 2/3;
+                }
+
+                &__three {
+                    grid-column: 3/4;
+                }
+
+                &__five {
+                    grid-column: 4/5;
+                }
+            }
+
+            &__content {
+                &__one {
+                    grid-column: 2/3;
+                }
+
+                &__two {
+                    grid-column: 3/4;
+                }
+
+                &__three {
+                    grid-column: 4/5;
+                }
+            }
+        }
+    }
+
+    .experience {
+        padding: 0 0 5em 0; // configure later
+
+        span {
+            font-weight: 800;
+        }
+
+        &__header {
+            grid-column: 1/5;
+        }
+
+        &__one {
+            grid-column: 1/2;
+        }
+
+        &__two {
+            grid-column: 2/5;
+        }
+    }
+
+    .education {
+        padding: 0 0 8.25em 0; // configure later
+
+        span {
+            font-weight: 800;
+        }
+
+        &__header {
+            grid-column: 1/5;
+        }
+
+        &__one {
+            grid-column: 1/2;
+        }
+
+        &__two {
+            grid-column: 2/5;
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    grid-gap: 2em;
+    position: relative;
+}
