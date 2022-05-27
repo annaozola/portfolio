@@ -28,7 +28,7 @@ export default function Projects({ data }) {
                 {projects.map(project =>(
                   <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
                     <div>
-                      <GatsbyImage image={getImage(project.frontmatter.thumbImg.childrenImageSharp[0].gatsbyImageData)} alt="Project"/>
+                      <GatsbyImage image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt={project.frontmatter.slug}/>
                       <h3>{ project.frontmatter.title }</h3>
                     </div>
                   </Link>
@@ -54,9 +54,11 @@ query ProjectsPage {
         title
         thumb {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData (
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
+            )
           }
         }
       }
