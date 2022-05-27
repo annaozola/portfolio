@@ -4,6 +4,8 @@ category: 3D Media
 tags: VFX, Materials, Environmental design
 slug: test-project
 date: 2021-01-01T00:00:00.000Z
+thumb: ../images/thumbs/test-thumbnail.jpg
+featuredImg: ../images/featured/test-img.jpg
 ---
 
 ## This is a heading.
