@@ -8,6 +8,7 @@ exports.createPages = async ({ graphql, actions }) => {
         nodes {
           frontmatter {
             slug
+            category
           }
         }
       }

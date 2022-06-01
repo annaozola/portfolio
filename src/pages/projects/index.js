@@ -1,13 +1,16 @@
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { useState } from 'react' // FOR FILTER
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper'
 import * as styles from '../../styles/projects.module.scss'
+// import CategoryFilter from '../../components/CategoryFilter'
 
 export default function Projects({ data }) {
   console.log(data)
   const projects = data.allMarkdownRemark.nodes
+
   return (
     <Layout>
       <Wrapper>
@@ -17,7 +20,6 @@ export default function Projects({ data }) {
           </div>
           <div className={styles.portfolio}>
             <div className={styles.categories}>
-              <p>Categories will be placed here</p>
             </div>
             <div className={styles.tags}>
               <p>Tags will be placed here</p>
@@ -45,7 +47,13 @@ export default function Projects({ data }) {
 // export page query
 export const query = graphql`
 query ProjectsPage {
-  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+  allMarkdownRemark(
+    sort: { fields: frontmatter___date, order: DESC }
+    ) {
+    group(field: frontmatter___category) {
+      category: fieldValue
+      totalCount
+    }
     nodes {
       frontmatter {
         category
