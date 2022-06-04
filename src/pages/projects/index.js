@@ -5,7 +5,6 @@ import { useState } from 'react' // FOR FILTER
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper'
 import * as styles from '../../styles/projects.module.scss'
-// import CategoryFilter from '../../components/CategoryFilter'
 
 export default function Projects({ data }) {
   console.log(data)
@@ -50,10 +49,6 @@ query ProjectsPage {
   allMarkdownRemark(
     sort: { fields: frontmatter___date, order: DESC }
     ) {
-    group(field: frontmatter___category) {
-      category: fieldValue
-      totalCount
-    }
     nodes {
       frontmatter {
         category
