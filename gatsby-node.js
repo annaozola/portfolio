@@ -20,7 +20,8 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result1 = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { key: { eq: "3d-media" }}}) {
         nodes {
           frontmatter {
             slug
@@ -35,7 +36,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result2 = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { frontmatter: { key: { eq: "web-dnd" }}}) {
         nodes {
           frontmatter {
             slug
