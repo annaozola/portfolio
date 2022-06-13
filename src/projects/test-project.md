@@ -1,7 +1,9 @@
 ---
 title: Test Project
+key: "3d-media"
+template: media
 category: 3D Media
-tags: ["VFX", "Materials", "Environmental design"]
+tags: ["VFX", "Materials", "Environment design"]
 slug: test-project
 date: 2021-01-01T00:00:00.000Z
 thumb: ../images/thumbs/test-thumbnail.jpg

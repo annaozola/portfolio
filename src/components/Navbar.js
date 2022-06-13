@@ -21,6 +21,8 @@ export default function Navbar() {
             <div className="links">
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
+                <Link to="/projects/3d-media">3D Media</Link>
+                <Link to="/projects/web-design-and-development">Web Design &amp; Development</Link>
                 <Link to="/">Contacts</Link>
                 <Link to="/resume">Resume</Link>
             </div>

@@ -1,5 +1,7 @@
 ---
 title: Test2 Project
+key: "web-dnd"
+template: web
 category: Web Design and Development
 tags: ["React", "GatsbyJS", "SCSS"]
 slug: test2-project
