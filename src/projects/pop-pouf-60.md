@@ -1,0 +1,25 @@
+---
+title: Pop Pouf 60
+key: "3d-media"
+template: media
+category: 3D Media
+tags: ["Product visualization", "Materials"]
+technology: Blender
+slug: pop-pouf-60
+date: 2022-03-29T00:00:00.000Z
+thumb: ../images/projects/pop-pouf-60/pop-pouf-60-thumbnail.jpg
+featuredImg: ../images/projects/pop-pouf-60/pop-pouf-60-1.jpg
+---
+
+## Origins
+
+This project was created to practice product visualization. I recreated [POP Pouf 60 made by Oot Oot studios](https://oot-oot.com/product/pouf-pop-60-2/?v=a7bdee32cb21).
+
+![Pop Pouf](/src/images/projects/pop-pouf-60/pop-pouf-60-4.jpg)
+![Pop Pouf](/src//images/projects/pop-pouf-60/pop-pouf-60-2.jpg)
+
+## Another color.
+
+The project was 100% made using Blender.
+
+![Pop Pouf](/src/images/projects/pop-pouf-60/pop-pouf-60-3.jpg)
