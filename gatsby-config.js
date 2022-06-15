@@ -6,6 +6,7 @@ module.exports = {
     copyright: 'Copyright 2022 Anna Ozola',
   },
   plugins: [
+    // double gatsby-transformer-remark - maybe don't need this one
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -14,6 +15,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
+        quality: 80,
         path: `${__dirname}/src/images`,
       },
     },
@@ -26,6 +28,19 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              quality: 100,
+            }
+          }
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

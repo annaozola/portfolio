@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import * as styles from '../styles/project-details.module.scss'
 
 export default function MediaDetails({ data }) {
-  const { media } = data.markdownRemark
+  const { html } = data.markdownRemark
   const { title, category, tags, featuredImg } = data.markdownRemark.frontmatter
 
   return (
@@ -17,7 +17,7 @@ export default function MediaDetails({ data }) {
             <div className={styles.featured}>
               <GatsbyImage image={featuredImg.childImageSharp.gatsbyImageData} alt="featured"/>
             </div>
-            <div className={styles.html} dangerouslySetInnerHTML={{ __html: media }} />
+            <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
         </div>
     </Layout>
   )
