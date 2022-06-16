@@ -136,6 +136,7 @@
     }
 }
 
+// Can probably REMOVE THIS as it's mentioned in global.scss
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

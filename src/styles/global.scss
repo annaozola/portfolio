@@ -257,19 +257,14 @@ nav a:active {
 //     }
 // }
 
+// v4 - FINAL
 footer {
     position: relative;
     box-sizing: border-box;
 
     .inner {
-        width: 100%;
         background-color: $black;
         padding: 32px 120px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 2rem 12rem;
 
         &__contacts {
             box-sizing: border-box;
@@ -288,7 +283,6 @@ footer {
 
         &__socials {
             &__links {
-
                 &__div {
                     display: grid;
                     grid-template-columns: repeat(4, 5rem);
@@ -328,6 +322,87 @@ footer {
         }
     }
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    grid-gap: 2em;
+    position: relative;
+}
+
+// v3 - flex footer
+// footer {
+//     position: relative;
+//     box-sizing: border-box;
+
+//     .inner {
+//         width: 100%;
+//         background-color: $black;
+//         padding: 32px 120px;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: flex-start;
+//         flex-wrap: wrap;
+//         gap: 2rem 12rem;
+
+//         &__contacts {
+//             box-sizing: border-box;
+//             -webkit-box-sizing: border-box;
+//             -moz-box-sizing: border-box;
+
+//             h6 {
+//                 padding-top: 2rem;
+//                 color: $green;
+
+//                 span {
+//                     text-transform: uppercase;
+//                 }
+//             }
+//         }
+
+//         &__socials {
+//             &__links {
+
+//                 &__div {
+//                     display: grid;
+//                     grid-template-columns: repeat(4, 5rem);
+//                     grid-gap: 0rem 1.125rem;
+//                 }
+
+//                 ul {
+//                     margin: 0;
+//                     padding: 0;
+
+//                     li {
+//                         display: inline-block;
+//                         line-height: 1.5;
+//                         margin-right: 0.875rem;
+
+//                         a {
+//                             text-decoration: none;
+//                             font-size: 1rem;
+//                             font-family: $mainfont;
+//                             color: $white;
+//                             font-weight: 400;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         &__navigation {
+//             a {
+//                 text-decoration: none;
+//                 font-size: 1rem;
+//                 font-family: $mainfont;
+//                 font-weight: 400;
+//                 color: $white;
+//                 margin: 0rem 0.875rem 0rem 0rem;
+//             }
+//         }
+//     }
+// }
 
 @media (max-width: 768px) { // edit later
 }

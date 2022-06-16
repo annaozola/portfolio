@@ -4,7 +4,8 @@ key: "ui-ux"
 template: uiux
 category: UI/UX design
 tags: ["App", "Website"]
-technology: ["Figma", "Photoshop"]
+technologies: ["Blender", "Cycles"]
+role: "3D Generalist"
 slug: daily-ui
 date: 2021-11-08T00:00:00.000Z
 thumb: ../images/projects/daily-ui/002-1-thumbnail.jpg

@@ -4,6 +4,8 @@ key: "3d-media"
 template: media
 category: 3D Media
 tags: ["VFX", "Materials", "Environment design"]
+technologies: ["Blender", "Cycles"]
+role: "3D Generalist"
 slug: test-project
 date: 2021-01-01T00:00:00.000Z
 thumb: ../images/thumbs/test-thumbnail.jpg

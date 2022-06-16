@@ -4,7 +4,8 @@ key: "3d-media"
 template: media
 category: 3D Media
 tags: ["Product visualization", "Materials"]
-technology: Blender
+technologies: ["Blender", "Cycles"]
+role: "3D Generalist"
 slug: pop-pouf-60
 date: 2022-03-29T00:00:00.000Z
 thumb: ../images/projects/pop-pouf-60/pop-pouf-60-thumbnail.jpg

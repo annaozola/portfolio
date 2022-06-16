@@ -1,0 +1,13 @@
+.details {
+    h1 {
+        margin-top: 6rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    grid-gap: 2em;
+    position: relative;
+}

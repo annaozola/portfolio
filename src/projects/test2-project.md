@@ -4,6 +4,8 @@ key: "web-dnd"
 template: web
 category: Web Design and Development
 tags: ["React", "GatsbyJS", "SCSS"]
+technologies: ["Blender", "Cycles"]
+role: "3D Generalist"
 slug: test2-project
 date: 2021-02-03T00:00:00.000Z
 thumb: ../images/thumbs/test2-thumbnail.jpg
