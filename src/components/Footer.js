@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import '../styles/global.scss'
+import resumePDF from "../../static/anna-ozola-resume-unfinished.pdf"
 
 export default function Footer() {
   return (
@@ -10,7 +11,9 @@ export default function Footer() {
             <div className="inner__contacts">
               <h3>Get in touch</h3>
               <p>Email: hello@annaozola.com <br />Phone Nr.: +371 28635159</p>
-              <h6>Download my <span>Résumé</span></h6>
+              <a href={resumePDF} download>
+                <h6>Download my <span>Résumé</span></h6>
+              </a>
             </div>
             <div className="inner__socials">
               <h3>Find me on the web</h3>
@@ -31,7 +34,7 @@ export default function Footer() {
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/">Contacts</Link>
-                <Link to="/">Resume</Link>
+                <Link to="/">Résumé</Link>
             </div>
           </div>
       </div>

@@ -5,8 +5,8 @@ import Layout from '../components/Layout'
 import * as styles from '../styles/project-details.module.scss'
 
 export default function ProjectDetails({ data }) {
-  const { html } = data.markdownRemark
-  const { title, category, tags, featuredImg } = data.markdownRemark.frontmatter
+  const { html } = data.mdx
+  const { title, category, tags, featuredImg } = data.mdx.frontmatter
 
   return (
     <Layout>
@@ -17,7 +17,7 @@ export default function ProjectDetails({ data }) {
             <div className={styles.featured}>
               <GatsbyImage image={featuredImg.childImageSharp.gatsbyImageData} alt="featured"/>
             </div>
-            <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
+            {/* <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} /> */}
         </div>
     </Layout>
   )
@@ -25,8 +25,8 @@ export default function ProjectDetails({ data }) {
 
 export const query = graphql`
   query ProjectDetails($slug: String) {
-    markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-      html
+    mdx(frontmatter: {slug: {eq: $slug}}) {
+      body
       frontmatter {
         category
         tags

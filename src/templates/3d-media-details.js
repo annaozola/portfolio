@@ -1,5 +1,7 @@
 import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { node } from 'prop-types'
 import React from 'react'
 import Layout from '../components/Layout'
 import Wrapper from '../components/Wrapper'
@@ -11,8 +13,8 @@ import * as styles from '../styles/3d-media-details.module.scss'
 // copied to other detail pages to avoid useless time-wasting.
 
 export default function MediaDetails({ data }) {
-  const { html } = data.markdownRemark
-  const { title, date, role, technologies, featuredImg } = data.markdownRemark.frontmatter
+  const { body } = data.mdx
+  const { title, date, role, technologies, featuredImg } = data.mdx.frontmatter
 
   return (
     <Layout>
@@ -38,9 +40,8 @@ export default function MediaDetails({ data }) {
           </div>
           <div className={styles.summary}>
             <h2>Summary</h2>
-            <p></p>
           </div>
-            <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
+          <MDXRenderer>{body}</MDXRenderer>
         </div>
       </Wrapper>
     </Layout>
@@ -49,8 +50,8 @@ export default function MediaDetails({ data }) {
 
 export const query = graphql`
   query MediaDetails($slug: String) {
-    markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-      html
+    mdx(frontmatter: {slug: {eq: $slug}}) {
+      body
       frontmatter {
         title
         date(formatString: "YYYY")

@@ -8,7 +8,7 @@ import * as styles from '../../styles/projects.module.scss'
 
 export default function Projects({ data }) {
   console.log(data)
-  const projects = data.allMarkdownRemark.nodes
+  const projects = data.allMdx.nodes
 
   return (
     <Layout>
@@ -46,7 +46,7 @@ export default function Projects({ data }) {
 // export page query
 export const query = graphql`
 query ProjectsPage {
-  allMarkdownRemark(
+  allMdx(
     sort: { fields: frontmatter___date, order: DESC }
     ) {
     nodes {

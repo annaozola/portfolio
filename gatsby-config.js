@@ -6,8 +6,6 @@ module.exports = {
     copyright: 'Copyright 2022 Anna Ozola',
   },
   plugins: [
-    // double gatsby-transformer-remark - maybe don't need this one
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -15,7 +13,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        quality: 80,
+        quality: 100,
         path: `${__dirname}/src/images`,
       },
     },
@@ -26,8 +24,10 @@ module.exports = {
         path: `${__dirname}/src/projects`,
       },
     },
+    `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -36,6 +36,25 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               quality: 100,
+              maxWidth: 1200,
+              path: `${__dirname}/src/images`,
+            }
+          }
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        plugins: [`gatsby-remark-images`],
+        extensions: [`.mdx`, `.md`, `.markdown`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              quality: 100,
+              maxWidth: 1200,
+              path: `${__dirname}/src/images`,
             }
           }
         ]

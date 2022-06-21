@@ -6,7 +6,7 @@ const { node } = require('prop-types')
 // new, based on Stack Overflow advice
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
       node,
@@ -20,7 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result1 = await graphql(`
     query {
-      allMarkdownRemark(
+      allMdx(
         filter: { frontmatter: { key: { eq: "3d-media" }}}) {
         nodes {
           frontmatter {
@@ -36,7 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result2 = await graphql(`
     query {
-      allMarkdownRemark(
+      allMdx(
         filter: { frontmatter: { key: { eq: "web-dnd" }}}) {
         nodes {
           frontmatter {
@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
       return
     }
 
-  result1.data.allMarkdownRemark.nodes.forEach( media => {
+  result1.data.allMdx.nodes.forEach( media => {
     createPage({
       path: '/projects/3d-media/' + media.frontmatter.slug, 
       component: mediaTemplate,
@@ -67,7 +67,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  result2.data.allMarkdownRemark.nodes.forEach( web => {
+  result2.data.allMdx.nodes.forEach( web => {
     createPage({
       path: '/projects/web-design-and-development/' + web.frontmatter.slug,
       component: webDndTemplate,

@@ -1,16 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import '../styles/global.scss'
 
+// Navbar and Sidebar
+
 export default function Layout({ children }) {
+
   return (
     <div className="layout">
-        <Navbar />
-        <div className="content">
-            { children }
-        </div>
-        <Footer />
+      <Navbar />
+      <div className="content">
+        { children }
+      </div>
+      <Footer />
     </div>
   )
 }

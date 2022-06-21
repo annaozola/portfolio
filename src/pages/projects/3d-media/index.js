@@ -9,36 +9,7 @@ import * as styles from '../../../styles/projects.module.scss'
 
 export default function MediaPage({ data }) {
   console.log(data)
-  const projects = data.allMarkdownRemark.nodes
-
-  // Trying out my filter
-  const categoryList = data.allMarkdownRemark.nodes
-
-  const [filteredList, setFilteredList] = useState(categoryList);
-
-  const [selectedCategory, setSelectedCategory] = useState("");
-
-  const filterByCategory = (filteredData) => {
-    // Avoid filter for empty string
-    if (!selectedCategory) {
-      return filteredData;
-    }
-
-  const filteredCategories = filteredData.filter(
-    (category) => category.category.split(" ").indexOf(selectedCategory) !== -1
-    );
-    return filteredCategories;
-  }
-
-  const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
-  };
-
-  useEffect(() => {
-    var filteredData = filterByCategory(categoryList);
-    setFilteredList(filteredData);
-  },
-  [selectedCategory]);
+  const projects = data.allMdx.nodes
 
   return (
     <Layout>
@@ -48,21 +19,6 @@ export default function MediaPage({ data }) {
               <h1>3D Media</h1>
           </div>
           <div className={styles.portfolio}>
-            <div className={styles.categories}>
-              <div>
-                <select id={styles.categoryInput} value={selectedCategory} onChange={handleCategoryChange}>
-                  <option value="">All</option>
-                  <option value="VFX">VFX</option>
-                  <option value="Environment Design">Environment Design</option>
-                  <option value="Materials">Materials</option>
-                </select>
-              </div>
-              {filteredList.map((item, index) => (
-                <div className={styles.categoryItem} key={index}>
-                  <div className={styles.categoryCategory}>{`Category: ${item.category}`}</div>
-                </div>
-              ))}
-            </div>
             <div className={styles.tags}>
               <p>Tags will be placed here</p>
             </div>
@@ -89,7 +45,7 @@ export default function MediaPage({ data }) {
 // export page query
 export const query = graphql`
 query MediaPage {
-  allMarkdownRemark(
+  allMdx(
     sort: {fields: frontmatter___date, order: DESC}
     filter: {frontmatter: {category: {eq: "3D Media"}}}
   ) {
@@ -101,7 +57,10 @@ query MediaPage {
         title
         thumb {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: AUTO)
+            gatsbyImageData (
+              layout: FULL_WIDTH,
+              placeholder: BLURRED
+            )
           }
         }
       }

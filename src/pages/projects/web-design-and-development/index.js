@@ -9,10 +9,10 @@ import * as styles from '../../../styles/projects.module.scss'
 
 export default function WebDndPage({ data }) {
   console.log(data)
-  const projects = data.allMarkdownRemark.nodes
+  const projects = data.allMdx.nodes
 
   // Trying out my filter
-  const categoryList = data.allMarkdownRemark.nodes
+  const categoryList = data.allMdx.nodes
 
   const [filteredList, setFilteredList] = useState(categoryList);
 
@@ -89,7 +89,7 @@ export default function WebDndPage({ data }) {
 // export page query
 export const query = graphql`
 query WebDndPage {
-  allMarkdownRemark(
+  allMdx(
     sort: {fields: frontmatter___date, order: DESC}
     filter: {frontmatter: {category: {eq: "Web Design and Development"}}}
   ) {
