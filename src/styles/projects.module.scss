@@ -1,20 +1,81 @@
-// Header
-.projects .header {
-    padding: 8.25rem 0rem 4.625rem 0rem;
-}
+// Font variables
+$headerfont: "Basement Grotesque", sans-serif;
+$mainfont: "Spline Sans", sans-serif;
+
+// Color variables
+$black: #000000;
+$darkgrey: #1d1d1d;
+$white: #ffffff;
+$green: #0bec56;
+
+// Padding variables
+// Left, right side padding
+$desktop-padding: 0 7.5rem;
+$mobile-padding: 0 2rem;
 
 // Portfolio => Categories => Tags => Gallery
 
 // TNN Setup - Change to yours later
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 80px;
-    margin: 80px 20px;
-}
+// .gallery {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-gap: 80px;
+//     margin: 80px 20px;
+// }
 
-.gallery a {
-    text-align: center;
-    margin: 20px auto 0px;
-    text-decoration: none;
+// .gallery a {
+//     text-align: center;
+//     margin: 20px auto 0px;
+//     text-decoration: none;
+// }
+
+// v2 - Main version
+.projects {
+    .header {
+        padding: 8.25rem 0rem 4.625rem 0rem;
+    }
+
+    .portfolio {
+        .tags {
+            p {
+                color: red; // edit when you figure out how to do tags
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 32px; // replace with em, rem or whatever later
+
+            // border-radius: 12px;
+
+            a {
+                text-decoration: none; // style this a tag later
+            }
+
+            .item {
+                position: relative;
+                border-radius: 12px;
+                box-shadow: inset 0 0 88px 10px rgba(0, 0, 0, 0.6);
+                width: 100%;
+                height: 100%;
+                
+                .image {
+                    border-radius: 12px;
+                    border: 1px solid $green;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    z-index: -999;
+                }
+
+                .details {
+                    position: absolute;
+                    z-index: 990;
+                    bottom: 8%; // OG 32px
+                    left: 8%; // OG 45px
+                }
+            }
+        }
+    }
 }

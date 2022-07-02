@@ -23,17 +23,17 @@ export default function MediaPage({ data }) {
               <p>Tags will be placed here</p>
             </div>
             <div className={styles.gallery}>
-              <p>This is where the gallery is</p>
-              <div>
-                {projects.map(project =>(
-                  <Link to={"/projects/3d-media/" + project.frontmatter.slug} key={project.id}>
-                    <div>
-                      <GatsbyImage image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt={project.frontmatter.slug}/>
+              {projects.map(project =>(
+                <Link to={"/projects/3d-media/" + project.frontmatter.slug} key={project.id}>
+                  <div className={styles.item}>
+                    <GatsbyImage className={styles.image} image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt={project.frontmatter.slug}/>
+                    <div className={styles.details}>
                       <h3>{ project.frontmatter.title }</h3>
+                      <h5>{ project.frontmatter.category }</h5>
                     </div>
-                  </Link>
-                ))}
-              </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
