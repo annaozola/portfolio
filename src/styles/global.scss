@@ -331,6 +331,7 @@ footer {
             &__links {
                 &__div {
                     display: grid;
+                    grid-auto-rows: 1fr;
                     grid-template-columns: repeat(4, 5rem);
                     grid-gap: 0rem 1.125rem;
 

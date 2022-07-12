@@ -45,9 +45,21 @@ $mobile-padding: 0 2rem;
         .gallery {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 1fr;
             grid-gap: 32px; // replace with em, rem or whatever later
+            padding: 0 0 6rem 0;
 
             // border-radius: 12px;
+
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+                padding: 0 0 4rem 0;
+            }
+
+            @media screen and (max-width: 460px) {
+                grid-template-columns: 1fr;
+                padding: 0 0 2rem 0;
+            }
 
             a {
                 text-decoration: none; // style this a tag later
@@ -59,10 +71,10 @@ $mobile-padding: 0 2rem;
                 box-shadow: inset 0 0 88px 10px rgba(0, 0, 0, 0.6);
                 width: 100%;
                 height: 100%;
+                border: 1px solid transparent;
                 
                 .image {
                     border-radius: 12px;
-                    border: 1px solid $green;
                     height: 100%;
                     width: 100%;
                     position: relative;
@@ -75,6 +87,10 @@ $mobile-padding: 0 2rem;
                     bottom: 8%; // OG 32px
                     left: 8%; // OG 45px
                 }
+            }
+
+            .item:hover {
+                border: 1.2px solid $green;
             }
         }
     }

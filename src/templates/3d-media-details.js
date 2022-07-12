@@ -23,18 +23,20 @@ export default function MediaDetails({ data }) {
           <div className={styles.header}>
             <h1>{title}</h1>
             <div className={styles.featured}>
-              <GatsbyImage image={featuredImg.childImageSharp.gatsbyImageData} alt="featured"/>
+              <GatsbyImage className={styles.image} image={featuredImg.childImageSharp.gatsbyImageData} alt="featured"/>
             </div>
 
-            <div className={styles.grid}>
-              <div className={styles.date}>
-                <h4>Date<span>{date}</span></h4>
-              </div>
-              <div className={styles.role}>
-                <h4>Role<span>{role}</span></h4>
-              </div>
-              <div className={styles.technologies}>
-                <h4>Technologies<span>{technologies}</span></h4>
+            <div className={styles.information}>
+              <div className={styles.grid}>
+                <div className={styles.date}>
+                  <h4>Date<span>{date}</span></h4>
+                </div>
+                <div className={styles.role}>
+                  <h4>Role<span>{role}</span></h4>
+                </div>
+                <div className={styles.technologies}>
+                  <h4>Technologies<span>{`${technologies}`}</span></h4>
+                </div>
               </div>
             </div>
           </div>
