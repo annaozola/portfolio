@@ -40,9 +40,6 @@ export default function MediaDetails({ data }) {
               </div>
             </div>
           </div>
-          <div className={styles.summary}>
-            <h2>Summary</h2>
-          </div>
           <MDXRenderer>{body}</MDXRenderer>
         </div>
       </Wrapper>
