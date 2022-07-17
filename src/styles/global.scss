@@ -148,6 +148,14 @@ ul, p, h1, h2, h3, h4, h5, h6 {
     color: $green;
 }
 
+// Images
+// Gatsby image styling override
+.gatsby-resp-image-wrapper {
+    .gatsby-resp-image-image {
+        border-radius: 12px;
+    }
+}
+
 // Header and navbar
 .navbar {
     background-color: $black;

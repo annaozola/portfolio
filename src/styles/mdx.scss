@@ -19,15 +19,15 @@
         padding-bottom: 5.625rem;
     }
 
-    // Image, item container
-    .item {
-        position: relative;
-        border-radius: 12px;
+    // Image, item container - customizing the default gatsby image settings
+    // .gatsby-resp-image-wrapper {
+    //     position: relative;
+    //     border-radius: 12px;
 
-        img {
-            border-radius: 12px;
-        }
-    }
+    //     .gatsby-resp-image-image {
+    //         border-radius: 12px;
+    //     }
+    // }
 
     // Item container
     // .item {

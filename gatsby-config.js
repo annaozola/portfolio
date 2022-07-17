@@ -56,7 +56,7 @@ module.exports = {
               maxWidth: 2400,
               path: `${__dirname}/src/images`,
             }
-          }
+          },
         ]
       }
     },
