@@ -19,6 +19,16 @@
         padding-bottom: 5.625rem;
     }
 
+    // Image, item container
+    .item {
+        position: relative;
+        border-radius: 12px;
+
+        img {
+            border-radius: 12px;
+        }
+    }
+
     // Item container
     // .item {
     //     position: relative;
@@ -56,5 +66,10 @@
     // Spacing between grids
     &__spacing {
         padding-bottom: 2em;
+    }
+
+    // Spacing that wraps a paragraph
+    &__pspacing {
+        padding: 8.25em 0 8.25em 0;
     }
 }
