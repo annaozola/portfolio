@@ -9,9 +9,16 @@
 
 // MDX elements
 
-.mdxitem {
-    background-color: yellow;
-}
+// Used for making images responsive for large screen sizes, but isn't the best solution
+// Another solution is to change the maxWidth property for gatsby-remark-images in gatsby-config
+// Setting the maxWidth to 4096 is good for larger screens but not good for optimization
+// .mdxitem {
+//     border-radius: 12px;
+
+//     .gatsby-resp-image-wrapper {
+//         max-width: none !important;
+//     }
+// }
 
 .mdx {
     // Summary
