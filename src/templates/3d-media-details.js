@@ -58,9 +58,12 @@ export const query = graphql`
         technologies
         featuredImg {
           childImageSharp {
-            gatsbyImageData (
+            gatsbyImageData(
               layout: FULL_WIDTH
               placeholder: BLURRED
+              width: 1200
+              blurredOptions: {width: 100}
+              transformOptions: {cropFocus: CENTER}
             )
           }
         }

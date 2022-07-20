@@ -26,6 +26,11 @@ $green: #0bec56;
                 border-radius: 12px;
                 height: 31.125rem;
                 width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
 
@@ -40,7 +45,29 @@ $green: #0bec56;
                 }
             }
 
+            .date {
+                grid-column: 1/2;
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1/5;
+                }
+            }
+
+            .role {
+                grid-column: 2/3;
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1/5;
+                }
+            }
+
             .technologies {
+                grid-column: 3/5;
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1/5;
+                }
+
                 h4 {
                     span {
                     }
