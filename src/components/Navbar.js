@@ -30,6 +30,7 @@ export default function Navbar() {
       <div className="mobile-navbar__nav links">
         <Link to="/" activeClassName="active">Home</Link>
         <Link to="/projects/3d-media" activeClassName="active">3D Media</Link>
+        <Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link>
         <Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link>
         <Link to="/" activeClassName="active">Contacts</Link>
         <Link to="/resume" activeClassName="active">Resume</Link>
@@ -50,6 +51,7 @@ export default function Navbar() {
       <div className="navbar__nav links">
         <Link to="/" activeClassName="active">Home</Link>
         <Link to="/projects/3d-media" activeClassName="active">3D Media</Link>
+        <Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link>
         <Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link>
         <Link to="/" activeClassName="active">Contacts</Link>
         <Link to="/resume" activeClassName="active">Résumé</Link>

@@ -50,11 +50,28 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  const result3 = await graphql(`
+    query {
+      allMdx(
+        filter: { frontmatter: { key: { eq: "ui-ux" }}}) {
+        nodes {
+          frontmatter {
+            slug
+            category
+            tags
+            template
+          }
+        }
+      }
+    }
+  `)
+
   // V8.4. S.O. - Change filename 3d-media-details to 3d-media-template
   const mediaTemplate = require.resolve(`./src/templates/3d-media-details.js`)
-  const webDndTemplate = require.resolve(`./src/templates/web-dnd-template.js`)
+  const webdndTemplate = require.resolve(`./src/templates/web-dnd-details.js`)
+  const uiuxTemplate = require.resolve(`./src/templates/ui-ux-details.js`)
     // Handle errors
-    if (result1.errors || result2.errors ) {
+    if (result1.errors || result2.errors || result3.errors ) {
       reporter.panicOnBuild(`Error while running GraphQL query.`)
       return
     }
@@ -70,43 +87,16 @@ exports.createPages = async ({ graphql, actions }) => {
   result2.data.allMdx.nodes.forEach( web => {
     createPage({
       path: '/projects/web-design-and-development/' + web.frontmatter.slug,
-      component: webDndTemplate,
+      component: webdndTemplate,
       context: { slug: web.frontmatter.slug }
     })
   })
 
-  // data.allMarkdownRemark.nodes.forEach(node => {
-  //   actions.createPage({
-  //     path: '/projects/' + node.frontmatter.slug,
-  //     component: path.resolve('./src/templates/project-details.js'),
-  //     context: { slug: node.frontmatter.slug }
-  //   })
-  // })
-
-  // V8.3. S.O.
-  // data.allMarkdownRemark.nodes.forEach(node => {
-  //   actions.createPage({
-  //     path: '/projects/3d-media/' + node.frontmatter.slug,
-  //     component: path.resolve('./src/templates/3d-media-details.js'),
-  //     context: { slug: node.frontmatter.slug }
-  //   })
-  // })
-
-  // // v8.2. S.O.
-  // result.data.allMarkdownRemark.edges.forEach(({ node }) = {
-  //   createPage({
-  //     path: '/projects/3d-media/' + node.frontmatter.slug,
-  //     component: path.resolve('./src/templates/3d-media-details.js'),
-  //     context: { slug: node.frontmatter.slug }
-  //   })
-  // })
-
-  // // my v8.1.
-  // data.allMarkdownRemark.nodes.forEach(node => {
-  //   actions.createPage({
-  //     path: '/projects/3d-media/' + node.frontmatter.slug,
-  //     component: path.resolve('./src/templates/3d-media-details.js'),
-  //     context: { slug: node.frontmatter.slug }
-  //   })
-  // })
+  result3.data.allMdx.nodes.forEach( uiux => {
+    createPage({
+      path: '/projects/ui-ux-design/' + uiux.frontmatter.slug,
+      component: uiuxTemplate,
+      context: { slug: uiux.frontmatter.slug }
+    })
+  })
 }

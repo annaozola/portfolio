@@ -1,0 +1,87 @@
+// Font variables
+$headerfont: "Basement Grotesque", sans-serif;
+$mainfont: "Spline Sans", sans-serif;
+
+// Color variables
+$black: #000000;
+$darkgrey: #1d1d1d;
+$white: #ffffff;
+$green: #0bec56;
+
+
+// Pretty much a 1:1 copy from the 3d-medial-details module
+.details {
+    h1 {
+        padding: 0 0 4.625rem 0;
+    }
+
+    .header {
+        padding: 8.25rem 0rem 4.625rem 0rem;
+
+        .featured {
+            position: relative;
+            // border-radius: 12px;
+            width: 100%;
+            height: 100%;
+
+            .image {
+                border-radius: 12px;
+                height: 31.125rem;
+                width: 100%;
+
+                @media screen and (max-width: 768px) {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .information {
+            padding: 2.375rem 0 0 0;
+
+            h4 {
+                span {
+                    padding-left: 1.375rem;
+                    font-family: $mainfont;
+                    font-weight: 400;
+                }
+            }
+
+            .date {
+                grid-column: 1/2;
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1/5;
+                }
+            }
+
+            .role {
+                grid-column: 2/3;
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1/5;
+                }
+            }
+
+            .technologies {
+                grid-column: 3/5;
+
+                @media screen and (max-width: 768px) {
+                    grid-column: 1/5;
+                }
+
+                h4 {
+                    span {}
+                }
+            }
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    grid-gap: 2em;
+    position: relative;
+}

@@ -19,9 +19,6 @@ export default function MediaPage({ data }) {
               <h1>3D Media</h1>
           </div>
           <div className={styles.portfolio}>
-            <div className={styles.tags}>
-              <p>Tags will be placed here</p>
-            </div>
             <div className={styles.gallery}>
               {projects.map(project =>(
                 <Link to={"/projects/3d-media/" + project.frontmatter.slug} key={project.id}>
@@ -58,8 +55,11 @@ query MediaPage {
         thumb {
           childImageSharp {
             gatsbyImageData (
-              layout: FULL_WIDTH,
+              layout: FULL_WIDTH
               placeholder: BLURRED
+              width: 1200
+              blurredOptions: {width: 100}
+              transformOptions: {cropFocus: CENTER}
             )
           }
         }
