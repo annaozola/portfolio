@@ -1,0 +1,33 @@
+// Global grid
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    grid-gap: 2em;
+    position: relative;
+}
+
+// Reset react-player video styling
+.react-player video {
+    // left: 0;
+    // top: 0;
+    // transform: none;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 30rem;
+    border-radius: 12px;
+    position: relative;
+}
+
+// Showreel
+.showreel {
+    width: 100%;
+    display: flex;
+
+    &__wrapper {
+        height: 300px;
+        width: 100%;
+        padding-bottom: 30rem;
+    }
+}

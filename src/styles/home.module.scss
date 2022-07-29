@@ -1,1 +1,18 @@
 // Homepage styles
+.home {
+    .heading {
+        h1 {
+            // something here
+        }
+    }
+
+    .more {
+        padding: 4.625rem 0 4.625rem 0;
+
+        h5 {
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
