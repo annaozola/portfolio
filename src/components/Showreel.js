@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactPlayer from 'react-player'
 import '../styles/global.scss'
 import '../styles/showreel.scss'
 import showreelVideo from '../../static/showreel-temp.mp4'
 
-export default function Showreel() {
+export default function Showreel({ mouseOverEvent, mouseOutEvent }) {
+
+    const [play, setPlay] = useState(false);
+
+    const handleMouseEnter = () => {
+      setPlay(true);
+    };
+    
+    const handleMouseLeave = () => {
+      setPlay(false);
+    };
+
   return (
-    <div className="showreel">
+    <div className="showreel cursor-react" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseOver={mouseOverEvent} onMouseOut={mouseOutEvent}>
       <div className="showreel__wrapper">
         <ReactPlayer
         className='react-player'
@@ -14,10 +25,9 @@ export default function Showreel() {
         width='100%'
         height='30rem'
         controls={false}
-        playing={true}
+        playing={play}
         muted
         loop={true}
-          
         />
       </div>
     </div>
