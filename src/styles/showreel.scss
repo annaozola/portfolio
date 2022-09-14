@@ -29,5 +29,17 @@
         height: 300px;
         width: 100%;
         padding-bottom: 30rem;
+
+        .react-player {
+            opacity: .3;
+            transition: opacity .3s ease-out;
+            -moz-transition: opacity .3s ease-out;
+            -webkit-transition: opacity .3s ease-out;
+            -o-transition: opacity .3s ease-out;
+        
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }

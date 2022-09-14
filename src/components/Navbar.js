@@ -1,5 +1,6 @@
 import React, {  useState } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+import '../styles/global.scss'
 
 // React icons
 import { HiOutlineX } from "@react-icons/all-files/hi/HiOutlineX"
