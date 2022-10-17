@@ -25,8 +25,7 @@ body {
     list-style: none;
 
     // Cursor
-    cursor: none;
-    // overflow: hidden;
+    // cursor: none;
 }
 
 body {
@@ -93,6 +92,7 @@ p {
     font-family: $mainfont;
     font-size: 1rem;
     font-weight: 400;
+    line-height: 28px;
 }
 
 ul {
@@ -172,41 +172,41 @@ hr {
 
 // Cursor
 // Third try
-.cursor {
-    &__dot-outline {
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+// .cursor {
+//     &__dot-outline {
+//         pointer-events: none;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         border-radius: 50%;
+//         opacity: 1;
+//         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-        width: 40px;
-        height: 40px;
-        background-color: rgba($green, 0.4);
+//         width: 40px;
+//         height: 40px;
+//         background-color: rgba($green, 0.4);
 
-        z-index: 10000;
-    }
+//         z-index: 10000;
+//     }
 
-    &__dot {
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        opacity: 1;
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+//     &__dot {
+//         pointer-events: none;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         border-radius: 50%;
+//         opacity: 1;
+//         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-        width: 8px;
-        height: 8px;
-        background-color: $green;
+//         width: 8px;
+//         height: 8px;
+//         background-color: $green;
 
-        z-index: 10000;
-    }
-}
+//         z-index: 10000;
+//     }
+// }
 
 // Second try
 // .cursor {

@@ -8,7 +8,6 @@ export default function Layout({ children }) {
 
   return (
     <div className="layout">
-      <Cursor />
       <Navbar />
       <div className="content">
         { children }
