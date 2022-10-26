@@ -1,8 +1,6 @@
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
-import { useEffect } from 'react'
-import { useState } from 'react' // FOR FILTER
 import Layout from '../../../components/Layout'
 import Wrapper from '../../../components/Wrapper'
 import * as styles from '../../../styles/projects.module.scss'
