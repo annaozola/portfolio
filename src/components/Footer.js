@@ -31,12 +31,20 @@ export default function Footer() {
             </div>
             <div className="inner__navigation">
               <h3>Navigation</h3>
-                <Link to="/" activeClassName="active">Home</Link>
+                <ul className="inner__navigation__links__div">
+                  <li><Link to="/" activeClassName="active">Home</Link></li>
+                  <li><Link to="/projects/3d-media" activeClassName="active">3D Media</Link></li>
+                  <li><Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link></li>
+                  <li><Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link></li>
+                  <li><Link to="/" activeClassName="active">Contacts</Link></li>
+                  <li><Link to="/resume" activeClassName="active">Résumé</Link></li>
+                </ul>
+                {/* <Link to="/" activeClassName="active">Home</Link>
                 <Link to="/projects/3d-media" activeClassName="active">3D Media</Link>
                 <Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link>
                 <Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link>
                 <Link to="/" activeClassName="active">Contacts</Link>
-                <Link to="/resume" activeClassName="active">Résumé</Link>
+                <Link to="/resume" activeClassName="active">Résumé</Link> */}
             </div>
           </div>
       </div>

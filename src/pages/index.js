@@ -28,10 +28,12 @@ export default function Home() {
             <h2>About</h2>
             <div className={styles.grid}>
               <div className={styles.about1}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta commodo augue dui cursus enim eu, pharetra. Volutpat nibh at purus amet, eros, egestas sagittis. Fusce nulla a tincidunt enim faucibus sit neque, dolor. Enim euismod eu in fringilla et in.</p>
+                <p>I'm Anna - a versatile digital designer and web developer, born and raised in Riga, Latvia, interested in both local and international employment opportunities. My most important values feature compassion, communication, experimentation and continuous learning. For inspiration, I observe other creators works from various mediums such as photography and graphic design. I find that mixing various types of art results in interesting designs.</p>
+
+                <p>I spend a lot of my free time expanding my design and web development knowledge, as well as learning new unrelated skills. At the moment, I'm learning React for web develoment. This website is actually my first React-based project. I built it using the great, open source framework Gatsby. So far, learning React has been a challenging and fun journey. I am also learning Houdini for visual effects as it's a field I want to get into in a couple of years.</p>
               </div>
               <div className={styles.about2}>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at augue accumsan sagittis velit purus tortor vel. Quis neque faucibus elit nisl, ullamcorper rutrum massa. Eget vestibulum mauris turpis sit. Netus proin dui, maecenas ipsum sed integer lorem sit sit. Nibh accumsan dis urna accumsan non viverra sit curabitur.</p>
+                <p>I often work on personal projects such as fan-made levels or textures for video games and random digital art or web development experiments. Even though I consider digital art to be a hobby of mine, I have other hobbies such as skateboarding, reading and playing multiplayer video games. On Saturtday nights you're bound to find me healing teammates in European Hell Let Loose lobbies or doing funky skateboarding tricks in SkaterXL multiplayer.</p>
               </div>
               <div className={styles.getintouch}>
                 <h4>Get in touch</h4>
