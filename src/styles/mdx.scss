@@ -99,6 +99,11 @@ a {
         border: 1px solid $green;
         border-radius: 12px;
 
+        &:hover {
+            background-color: rgba($green, 0.14);
+            transition: 0.3s;
+        }
+
         // Social icon
         .social-icon {
             color: $white;

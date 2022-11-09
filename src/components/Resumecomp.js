@@ -1,4 +1,5 @@
 import React from 'react'
+import Obfuscate from 'react-obfuscate'
 import '../styles/global.scss'
 import '../styles/resume.scss'
 
@@ -12,21 +13,29 @@ export default function Resumecomp() {
         </div>
         <div className="grid info">
             <div className="info__contacts">
-                <p>hello@annaozola.com <br />+37128635159 <br />Currently located in <br /><span>Riga, Latvia</span>.</p>
+                <p>
+                    <Obfuscate email="teesannalv@gmail.com" />
+                    <br />
+                    <Obfuscate tel="+371 28635159" />
+                    <br />
+                    Currently located in
+                    <br />
+                    <span>Riga, Latvia</span>.
+                </p>
             </div>
             <div className="info__socials__one">
                 <ul>
-                    <li>LinkedIn: @annacgfx</li>
-                    <li>Behance: @annacgfx</li>
-                    <li>Dribbble: @annacgfx</li>
-                    <li>GitHub: @annaozola</li>
+                    <li><a href="https://www.linkedin.com/in/annacgfx/">LinkedIn: @annacgfx</a></li>
+                    <li><a href="https://www.behance.net/annacgfx">Behance: @annacgfx</a></li>
+                    <li><a href="https://dribbble.com/annacgfx">Dribbble: @annacgfx</a></li>
+                    <li><a href="https://github.com/annaozola">GitHub: @annaozola</a></li>
                 </ul>
             </div>
             <div className="info__socials__two">
                 <ul>
-                    <li>Artstation: @annaozola</li>
-                    <li>Instagram @annacgfx</li>
-                    <li>Vimeo: @annaozola</li>
+                    <li><a href="https://www.artstation.com/annaozola">Artstation: @annaozola</a></li>
+                    <li><a href="https://www.instagram.com/annacgfx/">Instagram @annacgfx</a></li>
+                    <li><a href="https://vimeo.com/annacgfx">Vimeo: @annaozola</a></li>
                 </ul>
             </div>
         </div>

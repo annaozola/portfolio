@@ -1,4 +1,5 @@
 import React from 'react'
+import Obfuscate from 'react-obfuscate'
 import { Link } from 'gatsby'
 import '../styles/global.scss'
 import resumePDF from "../../static/anna-ozola-resume-unfinished.pdf"
@@ -10,7 +11,12 @@ export default function Footer() {
           <div className="grid">
             <div className="inner__contacts">
               <h3>Get in touch</h3>
-              <p>Email: hello@annaozola.com <br />Phone Nr.: +371 28635159</p>
+              <p>
+                Email: {' '}
+                <Obfuscate email="teesannalv@gmail.com" />
+                <br />
+                Phone: <Obfuscate tel="+371 28635159" />
+              </p>
               <a href={resumePDF} download>
                 <h6>Download my <span>Résumé</span></h6>
               </a>
@@ -39,12 +45,6 @@ export default function Footer() {
                   <li><Link to="/" activeClassName="active">Contacts</Link></li>
                   <li><Link to="/resume" activeClassName="active">Résumé</Link></li>
                 </ul>
-                {/* <Link to="/" activeClassName="active">Home</Link>
-                <Link to="/projects/3d-media" activeClassName="active">3D Media</Link>
-                <Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link>
-                <Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link>
-                <Link to="/" activeClassName="active">Contacts</Link>
-                <Link to="/resume" activeClassName="active">Résumé</Link> */}
             </div>
           </div>
       </div>

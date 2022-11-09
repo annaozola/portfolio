@@ -1,3 +1,13 @@
+// Font variables
+$headerfont: "Basement Grotesque", sans-serif;
+$mainfont: "Spline Sans", sans-serif;
+
+// Color variables
+$black: #000000;
+$darkgrey: #1d1d1d;
+$white: #ffffff;
+$green: #0bec56;
+
 // Homepage styles
 .home {
     .heading {
@@ -25,7 +35,12 @@
                 text-transform: uppercase;
 
                 a {
-                    color: #ffffff;
+                    color: $white;
+
+                    &:hover {
+                        color: $green;
+                        transition: 0.3s;
+                    }
                 }
             }
 
@@ -101,6 +116,17 @@
                 grid-column: 1/5;
                 padding: 2em 0;
             }
+
+            p {
+                a {
+                    color: $white;
+                    
+                    &:hover {
+                        color: $green;
+                        transition: 0.3s;
+                    }
+                }
+            }
         }
     }
 }
@@ -114,16 +140,6 @@
     grid-gap: 2em;
     position: relative;
 }
-
-// Font variables
-$headerfont: "Basement Grotesque", sans-serif;
-$mainfont: "Spline Sans", sans-serif;
-
-// Color variables
-$black: #000000;
-$darkgrey: #1d1d1d;
-$white: #ffffff;
-$green: #0bec56;
 
 // Buttons
 .btn {
@@ -143,6 +159,7 @@ $green: #0bec56;
 
     &:hover {
         background-color: rgba($green, 0.14);
+        transition: 0.3s;
     }
 
     @media screen and (max-width: 768px) {

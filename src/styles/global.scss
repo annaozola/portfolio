@@ -137,6 +137,7 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 
     &:hover {
         background-color: rgba($green, 0.14);
+        transition: 0.3s;
     }
 }
 
@@ -562,6 +563,17 @@ footer {
                 padding-top: 2em;
             }
 
+            p {
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $green;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
             a {
                 text-decoration: none;
             }
@@ -637,6 +649,11 @@ footer {
                             font-family: $mainfont;
                             color: $white;
                             font-weight: 400;
+
+                            &:hover {
+                                color: $green;
+                                transition: 0.3s;
+                            }
                         }
                     }
                 }
@@ -678,6 +695,11 @@ footer {
                         font-family: $mainfont;
                         color: $white;
                         font-weight: 400;
+
+                        &:hover {
+                            color: $green;
+                            transition: 0.3s;
+                        }
                     }
                 }
             }

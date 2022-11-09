@@ -1,3 +1,9 @@
+// Color variables
+$black: #000000;
+$darkgrey: #1d1d1d;
+$white: #ffffff;
+$green: #0bec56;
+
 // Resume
 .resume {
     .header {
@@ -16,17 +22,49 @@
         &__contacts {
             grid-column: 1/2;
 
+            p {
+                line-height: normal;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $green;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
             span {
                 font-weight: 800;
             }
         }
 
         &__socials {
+
             &__one {
                 grid-column: 2/3;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $green;
+                        transition: 0.3s;
+                    }
+                }
             }
             &__two {
                 grid-column: 3/5;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $green;
+                        transition: 0.3s;
+                    }
+                }
             }
         }
     }
