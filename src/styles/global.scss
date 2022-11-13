@@ -23,9 +23,6 @@ body {
     margin: 0 auto;
     padding: 0;
     list-style: none;
-
-    // Cursor
-    // cursor: none;
 }
 
 body {
@@ -52,7 +49,7 @@ body {
 
 // Wrapper
 .wrapper {
-    padding: $desktop-padding; // change to rem or em later - OG 120px
+    padding: $desktop-padding;
 
     @media screen and (max-width: 768px) {
         padding: $mobile-padding;
@@ -182,251 +179,6 @@ hr {
     }
 }
 
-// Cursor
-// Third try
-// .cursor {
-//     &__dot-outline {
-//         pointer-events: none;
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         border-radius: 50%;
-//         opacity: 1;
-//         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
-//         width: 40px;
-//         height: 40px;
-//         background-color: rgba($green, 0.4);
-
-//         z-index: 10000;
-//     }
-
-//     &__dot {
-//         pointer-events: none;
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         border-radius: 50%;
-//         opacity: 1;
-//         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
-//         width: 8px;
-//         height: 8px;
-//         background-color: $green;
-
-//         z-index: 10000;
-//     }
-// }
-
-// Second try
-// .cursor {
-//     &__dot-outline {
-//         pointer-events: none;
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         border-radius: 50%;
-//         opacity: 1;
-//         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
-//         width: 40px;
-//         height: 40px;
-//         background-color: rgba($green, 0.4);
-
-//         z-index: 10000;
-//     }
-
-//     &__dot {
-//         pointer-events: none;
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         border-radius: 50%;
-//         opacity: 1;
-//         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
-//         width: 8px;
-//         height: 8px;
-//         background-color: $green;
-        
-//         z-index: 10000;
-//     }
-// }
-
-// First try
-// .cursor {
-//     &__main {
-
-//         // border-radius: 50%;
-//         // width: 80px;
-//         // height: 80px;
-//         // border: 1px solid $green;
-
-//         transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
-//         animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-//         mix-blend-mode: difference;
-
-//         z-index: 10000;
-//         pointer-events: none;
-//         overflow: hidden;
-//         transform: translate(0, 0, 0);
-//         position: fixed;
-
-//         &__background {
-//             width: 30px;
-//             height: 30px;
-//             background: $white;
-//             border-radius: 50%;
-//         }
-//     }
-
-//     &__follower {
-//         width: 60px;
-//         height: 60px;
-
-//         z-index: 10000;
-//         pointer-events: none;
-//         transform: translate3d(0, 0, 0,);
-//         position: fixed;
-
-//         &__background {
-//             width: 100%;
-//             height: 100%;
-//             border-radius: 50%;
-//             border: 1px solid $green;
-//             position: relative;
-
-//             // &:after,
-//             // &:before {
-//             //     content: "";
-//             //     width: 3px;
-//             //     height: 3px;
-//             //     border-radius: 50%;
-//             //     background: white;
-//             //     display: block;
-//             //     position: absolute;
-//             //     top: 50%;
-//             //     transform: translateY(-50%);
-//             //     animation: fadeOut 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-//             // }
-
-//             // &:before {
-//             //     left: 10px;
-//             // }
-
-//             // &:after {
-//             //     right: 10px;
-//             // }
-//         }
-//     }
-// }
-
-// @keyframes fadeIn {
-//     0% {
-//         opacity: 0;
-//     }
-
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes fadeOut {
-//     0% {
-//         opacity: 1;
-//     }
-
-//     100% {
-//         opacity: 0;
-//     }
-// }
-
-// @keyframes bgUp {
-//     from {
-//         background-color: transparent;
-//     }
-
-//     to {
-//         background-color: black;
-//     }
-// }
-
-// @keyframes bgDown {
-//     from {
-//         background-color: black;
-//     }
-
-//     to {
-//         background-color: transparent;
-//     }
-// }
-
-// @keyframes scaleUp {
-//     from {
-//         transform: scale(1);
-//     }
-
-//     to {
-//         transform: scale(1.5);
-//     }
-// }
-
-// @keyframes scaleDown {
-//     from {
-//         transform: scale(1.5);
-//     }
-
-//     to {
-//         transform: scale(1);
-//     }
-// }
-
-// @keyframes translateLeftDot {
-//     from {
-//         transform: translate(20px, -50%);
-//     }
-
-//     to {
-//         transform: translate(0px, -50%);
-//     }
-// }
-
-// @keyframes translateRightDot {
-//     from {
-//         transform: translate(-20px, -50%);
-//     }
-
-//     to {
-//         transform: translate(0px, -50%);
-//     }
-// }
-
-// // Cursor reactive div
-// // .cursor-react {
-// //     .cursor__main__background .cursor__follower__background {
-// //         animation: scaleUp 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards,
-// //         bgUp 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-
-// //         &:after {
-// //             animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards,
-// //                 translateRightDot 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-// //         }
-
-// //         &:before {
-// //             animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards,
-// //                 translateLeftDot 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-// //         }
-// //     }
-
-// //     .cursor__main {
-// //         animation: fadeOut 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-// //     }
-// // }
-
 // Header and navbar
 .navbar {
     background-color: $black;
@@ -434,10 +186,10 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $desktop-padding; // previously - 0.5rem calc((100vw - 1000px) / 2);
+    padding: $desktop-padding;
 
     @media screen and (max-width: 768px) {
-        padding: $mobile-padding; // mobile padding
+        padding: $mobile-padding; 
     }
 
     &__logo {
@@ -477,11 +229,9 @@ hr {
     width: 100%;
     height: 100%;
     background-color: $black;
-    // display: grid; // might remove
-    // align-items: center; // might remove
     top: 0;
     left: 0;
-    transition: 0.3s ease-in-out; // change later
+    transition: 0.3s ease-in-out;
     padding: 6rem 0rem 0rem 2rem;
 
     // hide scrollbar
@@ -508,15 +258,6 @@ hr {
         align-items: left;
         text-align: left;
         flex-wrap: wrap;
-
-        // display: grid;
-        // grid-template-rows: repeat(6, 80px);
-        // grid-template-columns: 1fr;
-        // text-align: center;
-
-        // @media screen and (max-width: 480px) {
-        //     grid-template-rows: repeat(6, 60px);
-        // }
         
         a {
             font-size: 2.5rem;
@@ -703,19 +444,6 @@ footer {
                     }
                 }
             }
-
-            // a {
-            //     text-decoration: none;
-            //     font-size: 1rem;
-            //     font-family: $mainfont;
-            //     font-weight: 400;
-            //     color: $white;
-            //     margin: 0rem 0.875rem 0rem 0rem;
-
-            //     @media screen and (max-width: 320px) {
-            //         display: flex;
-            //     }
-            // }
         }
     }
 }
