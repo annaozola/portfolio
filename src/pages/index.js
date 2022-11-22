@@ -16,8 +16,8 @@ export default function Home() {
           <Showreel />
           <div className={styles.showreelinfo}>
             <div className={styles.sricontainer}>
-              <h4>General showreel</h4>
-              <p>All kinds of projects.</p>
+              <h4>UI showreel</h4>
+              <p>Longer, general showreel coming soon.</p>
             </div>
             <div className={styles.sricontainer}>
               <h5>
