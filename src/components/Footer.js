@@ -42,7 +42,7 @@ export default function Footer() {
                   <li><Link to="/projects/3d-media" activeClassName="active">3D Media</Link></li>
                   <li><Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link></li>
                   <li><Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link></li>
-                  <li><Link to="/" activeClassName="active">Contacts</Link></li>
+                  <li><Link to="/contacts" activeClassName="active">Contacts</Link></li>
                   <li><Link to="/resume" activeClassName="active">Résumé</Link></li>
                 </ul>
             </div>
