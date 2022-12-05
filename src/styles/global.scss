@@ -220,6 +220,11 @@ hr {
             cursor: pointer;
         }
     }
+
+    // Active navigation links
+    .active {
+        color: $green;
+    }
 }
 
 // Sidebar
@@ -443,6 +448,11 @@ footer {
                         }
                     }
                 }
+            }
+
+            // Active footer navigation links
+            .active {
+                color: $green;
             }
         }
     }

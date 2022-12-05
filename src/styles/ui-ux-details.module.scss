@@ -8,8 +8,7 @@ $darkgrey: #1d1d1d;
 $white: #ffffff;
 $green: #0bec56;
 
-
-// Pretty much a 1:1 copy from the 3d-medial-details module
+// Details
 .details {
     h1 {
         padding: 0 0 4.625rem 0;
@@ -20,7 +19,6 @@ $green: #0bec56;
 
         .featured {
             position: relative;
-            // border-radius: 12px;
             width: 100%;
             height: 100%;
 
