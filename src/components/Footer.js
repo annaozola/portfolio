@@ -39,6 +39,7 @@ export default function Footer() {
               <h3>Navigation</h3>
                 <ul className="inner__navigation__links__div">
                   <li><Link to="/" activeClassName="active">Home</Link></li>
+                  <li><Link to="/projects" activeClassName="active">Projects</Link></li>
                   <li><Link to="/projects/3d-media" activeClassName="active">3D Media</Link></li>
                   <li><Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link></li>
                   <li><Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link></li>

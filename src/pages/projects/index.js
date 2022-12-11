@@ -2,7 +2,7 @@ import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { useEffect } from 'react'
-import { useState } from 'react' // FOR FILTER
+import { useState } from 'react'
 import { useMemo } from 'react'
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper'
@@ -10,7 +10,6 @@ import * as styles from '../../styles/projects.module.scss'
 
 export default function Projects({ data }) {
   console.log(data)
-  // const projects = data.allMdx.nodes
 
   const [projectList, setProjectList] = useState([]);
 
@@ -42,59 +41,25 @@ export default function Projects({ data }) {
           </div>
           <div className={styles.portfolio}>
             <div className={styles.categories}>
-              <p>Categories will be placed here</p>
-              
-              <div>
-                <select
-                name="category-list"
-                id="category-list"
-                onChange={handleCategoryChange}
-                >
-                  <option value="">All</option>
-                  <option value="3D Media">3D media</option>
-                  <option value="UI/UX design">UI/UX Design</option>
-                  <option value="Web Design and Development">Web Design and Development</option>
-                </select>
-              </div>
-
-              </div>
-            </div>
-            <div className={styles.tags}>
-              <p>Tags will be placed here</p>
+                <button className="btn" value="" onClick={handleCategoryChange}>All</button>
+                <button className="btn" value="3D Media" onClick={handleCategoryChange}>3D Media</button>
+                <button className="btn" value="UI/UX design" onClick={handleCategoryChange}>UI/UX Design</button>
+                <button className="btn" value="Web Design and Development" onClick={handleCategoryChange}>Web Design and Development</button>
             </div>
             <div className={styles.gallery}>
-              <p>This is where the gallery is</p>
-              <p>New</p>
-
-              <div>
                 {filteredList.map(project => (
-                  <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
-                    <div>
-                      <GatsbyImage image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt={project.frontmatter.slug}/>
-                      <h3>{ project.frontmatter.title }</h3>
+                  <Link to={"/projects/" + project.frontmatter.categoryPath + "/" + project.frontmatter.slug} key={project.id}>
+                    <div className={styles.item}>
+                      <GatsbyImage className={styles.image} image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt={project.frontmatter.slug}/>
+                      <div className={styles.details}>
+                        <h3>{ project.frontmatter.title }</h3>
+                        <h5>{ project.frontmatter.category }</h5>
+                      </div>
                     </div>
                   </Link>
                 ))}
-              </div>
-
-              {/* <div>
-                {filteredList.map((element, index) => (
-                  <Item {...element} key={index} />
-                ))}
-              </div> */}
-
-              <p>Old</p>
-              {/* <div>
-                {projects.map(project =>(
-                  <Link to={"/projects/" + project.frontmatter.slug} key={project.id}>
-                    <div>
-                      <GatsbyImage image={getImage(project.frontmatter.thumb.childImageSharp.gatsbyImageData)} alt={project.frontmatter.slug}/>
-                      <h3>{ project.frontmatter.title }</h3>
-                    </div>
-                  </Link>
-                ))}
-              </div> */}
             </div>
+          </div>
         </section>
       </Wrapper>
     </Layout>
@@ -109,6 +74,7 @@ query ProjectsPage {
     ) {
     nodes {
       frontmatter {
+        categoryPath
         category
         slug
         tags
