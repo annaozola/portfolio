@@ -191,10 +191,24 @@ hr {
     @media screen and (max-width: 768px) {
         padding: $mobile-padding; 
     }
+    
+    a {
+        color: $white;
+
+        &:hover {
+            transition: 0.3s;
+        }
+    }
 
     &__logo {
         a {
             text-decoration: none;
+
+            h5 {
+                font-family: $headerfont;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+            }
         }
     }
 
@@ -311,10 +325,10 @@ footer {
 
             p {
                 a {
-                    color: $white;
+                    color: $green;
 
                     &:hover {
-                        color: $green;
+                        text-decoration: underline;
                         transition: 0.3s;
                     }
                 }

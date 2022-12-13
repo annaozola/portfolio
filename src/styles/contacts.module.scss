@@ -33,10 +33,10 @@ $green: #0bec56;
         }
 
         a {
-            color: $white;
+            color: $green;
                 
             &:hover {
-            color: $green;
+            text-decoration: underline;
             transition: 0.3s;
             }
         }
