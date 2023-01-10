@@ -3,11 +3,13 @@ import Obfuscate from "react-obfuscate"
 import Layout from '../components/Layout'
 import Showreel from '../components/Showreel'
 import Wrapper from '../components/Wrapper'
+import Header from '../components/Header'
 import * as styles from '../styles/home.module.scss'
 
 export default function Home() {
   return (
     <Layout>
+      <Header />
       <Wrapper>
         <section className={styles.home}>
           <div className={styles.heading}>

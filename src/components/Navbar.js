@@ -35,7 +35,7 @@ export default function Navbar() {
         <Link to="/projects/ui-ux-design" activeClassName="active">UI/UX Design</Link>
         <Link to="/projects/web-design-and-development" activeClassName="active">Web Design &amp; Development</Link>
         <Link to="/contacts" activeClassName="active">Contacts</Link>
-        <Link to="/resume" activeClassName="active">Resume</Link>
+        <Link to="/resume" activeClassName="active">Résumé</Link>
       </div>
     </div>
   }
