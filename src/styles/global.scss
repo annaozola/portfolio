@@ -188,6 +188,12 @@ hr {
     justify-content: space-between;
     padding: $desktop-padding;
 
+    // Fixed navbar
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+
     @media screen and (max-width: 768px) {
         padding: $mobile-padding; 
     }
