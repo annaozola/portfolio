@@ -500,3 +500,16 @@ footer {
     height: 1px;
     overflow: hidden;
 }
+
+// Splash screen, fake pre-loader
+.splash {
+    display: flex;
+    align-items: center;
+    height: 100vh; // change to 100% if necessary
+    z-index: 999999;
+
+    svg {
+        display: block;
+        margin: 0 auto;
+    }
+}
