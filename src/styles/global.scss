@@ -502,6 +502,11 @@ footer {
 }
 
 // Splash screen, fake pre-loader
+
+// #splash-container {
+//     display: none;
+// }
+
 .splash {
     display: flex;
     align-items: center;
@@ -512,4 +517,14 @@ footer {
         display: block;
         margin: 0 auto;
     }
+}
+
+// Animated text
+// .word-wrapper {
+//     white-space: nowrap;
+// }
+
+.mocontainer {
+    // display: flex;
+    word-wrap: break-word;
 }

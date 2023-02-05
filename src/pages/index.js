@@ -14,11 +14,18 @@ export default function Home() {
   // Intro splash
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
+  useEffect (() => {
+    if (sessionStorage.getItem("showSplashScreen") == null)
+    {
+      sessionStorage.setItem("showSplashScreen", false);
+      setTimeout (() => {
+        setLoading(false);
+      }, 2000)
+    }
+    else {
       setLoading(false);
-    }, 2000)
-  }, [])
+    }
+  })
 
   return (
     <>

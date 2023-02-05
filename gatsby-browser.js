@@ -7,38 +7,38 @@
 // You can delete this file if you're not using it
 
 
-// This is where the Framer Motion page transition magic happens
-import React from "react";
-import { AnimatePresence } from "framer-motion";
+// // This is where the Framer Motion page transition magic happens
+// import React from "react";
+// import { AnimatePresence } from "framer-motion";
 
-export const wrapPageElement = ({element}) => (
-    <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
-)
+// export const wrapPageElement = ({element}) => (
+//     <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
+// )
 
-// TEMP pasted
-export const shouldUpdateScroll = ({
-  routerProps: { location },
-  getSavedScrollPosition
-}) => {
-  // transition duration from `layout.js` * 1000 to get time in ms
-  const TRANSITION_DELAY = 0.3 * 1000 * 2
+// // TEMP pasted
+// export const shouldUpdateScroll = ({
+//   routerProps: { location },
+//   getSavedScrollPosition
+// }) => {
+//   // transition duration from `layout.js` * 1000 to get time in ms
+//   const TRANSITION_DELAY = 0.3 * 1000 * 2
 
-  // if it's a "normal" route
-  if (location.action === "PUSH") {
-    window.setTimeout(() => window.scrollTo(0, 0), TRANSITION_DELAY)
-  }
+//   // if it's a "normal" route
+//   if (location.action === "PUSH") {
+//     window.setTimeout(() => window.scrollTo(0, 0), TRANSITION_DELAY)
+//   }
 
-  // if we used the browser's forwards or back button
-  else {
-    // breaking change in shouldUpdateScroll browser API hook:
-    // https://github.com/gatsbyjs/gatsby/issues/23842
-    // looks like they fixed it in Gatsby v. 2.28.1
-    // https://github.com/gatsbyjs/gatsby/pull/27384
+//   // if we used the browser's forwards or back button
+//   else {
+//     // breaking change in shouldUpdateScroll browser API hook:
+//     // https://github.com/gatsbyjs/gatsby/issues/23842
+//     // looks like they fixed it in Gatsby v. 2.28.1
+//     // https://github.com/gatsbyjs/gatsby/pull/27384
 
-    const savedPosition = getSavedScrollPosition(location) || [0, 0]
+//     const savedPosition = getSavedScrollPosition(location) || [0, 0]
 
-    window.setTimeout(() => window.scrollTo(...savedPosition), TRANSITION_DELAY)
-  }
+//     window.setTimeout(() => window.scrollTo(...savedPosition), TRANSITION_DELAY)
+//   }
 
-  return false
-}
+//   return false
+// }
