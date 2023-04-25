@@ -11,6 +11,7 @@ const Wrapper = (props) => {
 const tagMap = {
   paragraph: "p",
   heading1: "h1",
+  heading2: "h2",
   heading4: "h4",
   heading5: "h5"
 };
