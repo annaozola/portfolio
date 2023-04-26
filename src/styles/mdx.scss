@@ -59,25 +59,85 @@ $green: #0bec56;
 //     height: auto;
 // }
 
-// Old that works but isn't full size
+// New, that's almost a copy of old
+// .mdxvideo {
+//     position: relative !important;
+//     padding-top: 56.25% !important;
 
+//     &__wrapper {
+//         position: absolute !important;
+//         top: 0 !important;
+//         left: 0 !important;
+//         width: 100% !important;
+//         height: 100% !important;
+//     }
+// }
+
+// HD video
+// Hasn't been updated to new format
 .mdxvideo {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-top: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
+
+    .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.mdxvideo iframe,
-.mdxvideo object,
-.mdxvideo embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+// 2048x2048 video
+.mdxvideo2048 {
+    position: relative;
+    padding-top: calc(2048 / 2048 * 100%);
+    overflow: hidden;
+    // max-width: 100%;
+
+    .react-player {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
 }
+
+// 2880 width, 2048 height video
+.mdxvideoweb {
+    position: relative;
+    padding-top: calc(2048 / 2880 * 100%);
+    overflow: hidden;
+    // max-width: 100%;
+
+    .react-player {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+}
+
+// Old that works but isn't full size
+
+// .mdxvideo {
+//     position: relative;
+//     padding-bottom: 56.25%;
+//     height: 0;
+//     overflow: hidden;
+//     max-width: 100%;
+// }
+
+// .mdxvideo iframe,
+// .mdxvideo object,
+// .mdxvideo embed {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
 
 // Old end
 
@@ -236,6 +296,39 @@ a {
         }
     }
 
+    // Flex 2
+    // Need to make the image fit the height of the video
+    &__flexgallery2 {
+        display: flex;
+        flex-direction: column;
+        // gap: 2em;
+        
+        // display: flex;
+        // flex-direction: row;
+        // gap: 2em;
+        // height: 20em;
+    }
+
+    &__flexcolumn2 {
+        flex-direction: column;
+        display: flex;
+        gap: 2em;
+    }
+
+    // Fits for web video
+    &__flexitem2 {
+        // Width = height to match video height
+        // calc(2048 / 2880 * 100%);;
+        width: 60.5%;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+
     &__prefooter {
         padding: 4em 0;
     }
@@ -302,6 +395,10 @@ a {
 @media screen and (max-width: 768px) {
     .mdx {
         &__flexitem {
+            width: 100%;
+        }
+
+        &__flexitem2 {
             width: 100%;
         }
     }

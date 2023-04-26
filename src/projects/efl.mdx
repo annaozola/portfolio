@@ -15,19 +15,30 @@ categoryPath: ui-ux-design
 
 import Spacing from "../components/MDX/Spacing"
 import PSpacing from "../components/MDX/PSpacing"
+import PSpacing2 from "../components/MDX/PSpacing2"
 import Grid2 from "../components/MDX/Grid2"
 import Grid4 from "../components/MDX/Grid4"
 import Summary from "../components/MDX/Summary"
 import Item from "../components/MDX/Item"
 import PreFooter from "../components/MDX/PreFooter"
 
+import FlexColumn from "../components/MDX/FlexColumn"
+import FlexColumn2 from "../components/MDX/FlexColumn2"
+import FlexItem from "../components/MDX/FlexItem"
+import FlexItem2 from "../components/MDX/FlexItem2"
+import FlexGallery from "../components/MDX/FlexGallery"
+import FlexGallery2 from "../components/MDX/FlexGallery2"
+
 import Social from "../components/MDX/Social"
 import { FaBehance } from "@react-icons/all-files/fa/FaBehance"
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram"
+import { FaDribbble } from "@react-icons/all-files/fa/FaDribbble"
 
 import React from "react"
 import ReactPlayer from "react-player"
 import Video from "../components/MDX/Video"
+import VideoWeb from "../components/MDX/VideoWeb"
+import Video2048 from "../components/MDX/Video2048"
 
 <Summary>
 
@@ -91,40 +102,61 @@ View on Instagram
 
 <PSpacing>
 
-## Animated
+## Animated UI
+
+<Grid2>
+
+<PSpacing2>
+
+The animation was created in Adobe After Effects, with the help of Figma and AEUX to transfer the design layers from Figma to After Effects.
+
+</PSpacing2>
+
+<PSpacing2>
+
+Want to know my process? Here's how I think.
+
+Abbrevation reference: BTT - bottom to top, TTB - top to bottom, LTR - left to right.
+
+</PSpacing2>
+
+</Grid2>
 
 </PSpacing>
 
 <Grid2>
 
-<Video>
+<Item>
+
+<FlexGallery2>
+
+<VideoWeb>
 
 <ReactPlayer
   className="react-player"
   width="100%"
-  height="100vw"
+  height="100%"
   controls={true}
   loop={true}
   playing={true}
   url="https://vimeo.com/820847847"
-  wrapper={Video}
 />
 
-</Video>
+</VideoWeb>
 
-<Video>
+</FlexGallery2>
 
-<ReactPlayer
-  className="react-player"
-  width="100%"
-  height="100vw"
-  controls={true}
-  loop={true}
-  playing={true}
-  url="https://vimeo.com/820848313"
-/>
+</Item>
 
-</Video>
+<Item>
+
+<FlexItem2>
+
+![EFL animation sketch scan](../images/projects/efl/sketch.jpg "EFL animation sketch scan")
+
+</FlexItem2>
+
+</Item>
 
 </Grid2>
 
