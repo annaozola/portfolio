@@ -109,10 +109,10 @@ export default function Home() {
               <h2>About</h2>
               <div className={styles.grid}>
                 <div className={styles.about1}>
-                  <p>I'm Anna - a versatile digital designer and web developer, born and raised in Riga, Latvia, interested in both local and international employment opportunities. My most important values feature compassion, communication, experimentation and continuous learning. I spend a lot of my free time expanding my design and web development knowledge, as well as learning other new skills. At the moment, I'm learning React for web develoment. So far, learning React has been a fun and challenging journey.</p>
+                  <p>I'm Anna - a versatile digital designer and web developer, born and raised in Riga, Latvia. I spend a lot of my free time expanding my design and development knowledge. Recently, I have realized that I am very passionate about 3D CGI and VFX so I tend to work on 3D CGI projects whenever I can.</p>
                 </div>
                 <div className={styles.about2}>
-                  <p>I often work on personal projects such as fan-made levels or textures for video games. I also enjoy skateboarding, reading and playing multiplayer video games. On Saturtday nights you're bound to find me healing teammates in European Hell Let Loose lobbies or fighting in Chivalry 2 battles.</p>
+                  <p>I enjoy skateboarding, reading and playing multiplayer video games. On Saturtday nights you're bound to find me healing teammates in European Hell Let Loose lobbies or fighting in Chivalry 2 battles.</p>
                 </div>
                 <div className={styles.getintouch}>
                   <h4>Get in touch</h4>

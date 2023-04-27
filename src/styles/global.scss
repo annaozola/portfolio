@@ -182,7 +182,7 @@ hr {
 // Header and navbar
 .navbar {
     background-color: $black;
-    height: 60px;
+    height: 4rem; // was 60px before
     display: flex;
     align-items: center;
     justify-content: space-between;

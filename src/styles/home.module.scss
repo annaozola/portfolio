@@ -15,9 +15,13 @@ $green: #0bec56;
     }
 
     .showreelinfo {
-        padding: 2.125em 0;
+        padding: 2.125em 0 8.25em 0;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 1500px) {
+            padding: 2.125em 0 2.125em 0;
+        }
 
         .sricontainer {
             display: flex;
@@ -63,6 +67,11 @@ $green: #0bec56;
 
         p {
             padding-bottom: 1.5em;
+        }
+
+        @media screen and (min-width: 1500px) {
+            display: none;
+            visibility: hidden;
         }
 
         @media screen and (max-width: 768px) {
