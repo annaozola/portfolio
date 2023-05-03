@@ -2,9 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 
 import AnimatedText from "./AnimatedText"
-import { useInView } from "framer-motion"
-import { useAnimation } from "framer-motion"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 import '../styles/global.scss'
 import '../styles/header.scss'
@@ -14,29 +12,31 @@ import resumePDF from "../../static/Anna_Ozola_CV_v1.pdf"
 
 export default function Header() {
 
-    // Framer motion
-    const [replay, setReplay] = useState(true);
+  // Framer motion
+  const [replay, setReplay] = useState(true);
 
-  const headingtext = [
-    {
-      type: "heading1",
-      text: "I create digital design",
-    }
-  ]
+  // Showreel animation (CURRENTLY DISABLED)
 
-  const showreeltitle = [
-    {
-      type: "heading4",
-      text: "UI showreel"
-    }
-  ]
+  // const headingtext = [
+  //   {
+  //     type: "heading1",
+  //     text: "I create digital design",
+  //   }
+  // ]
 
-  const showreelparagraph = [
-    {
-      type: "paragraph",
-      text: "Longer, general showreel coming soon."
-    }
-  ]
+  // const showreeltitle = [
+  //   {
+  //     type: "heading4",
+  //     text: "UI showreel"
+  //   }
+  // ]
+
+  // const showreelparagraph = [
+  //   {
+  //     type: "paragraph",
+  //     text: "Longer, general showreel coming soon."
+  //   }
+  // ]
 
   const abouttitle = [
     {

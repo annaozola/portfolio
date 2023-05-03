@@ -17,7 +17,15 @@ export default function Showreel({ mouseOverEvent, mouseOutEvent }) {
     };
 
   return (
-    <div className="showreel cursor-react" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseOver={mouseOverEvent} onMouseOut={mouseOutEvent}>
+    <div
+      className="showreel cursor-react"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onMouseOver={mouseOverEvent}
+      onMouseOut={mouseOutEvent}
+      onFocus={mouseOverEvent}
+      onBlur={mouseOutEvent}
+      >
       <div className="showreel__wrapper">
         <ReactPlayer
         className='react-player'

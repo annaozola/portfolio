@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { node } from 'prop-types'
 import React from 'react'
 import Layout from '../components/Layout'
 import Wrapper from '../components/Wrapper'
@@ -9,10 +8,7 @@ import Wrapper from '../components/Wrapper'
 import AnimatedText from '../components/AnimatedText'
 
 import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useAnimation } from 'framer-motion'
 import { useState } from 'react'
-import { useEffect } from 'react'
 
 // I am using MULTIPLE STYLESHEET MODULES for now but this can be simplified to one later.
 import * as styles from '../styles/ui-ux-details.module.scss'
@@ -92,13 +88,6 @@ export default function UiuxDetails({ data }) {
     }
   };
 
-  // FM useInView
-  // const textanim = useRef(null)
-  // const ref = useRef(null)
-  // const isInView = useInView({ root: textanim })
-
-// BEFORE FRAMER MOTION
-
   return (
     <Layout>
       <Wrapper>
@@ -113,10 +102,6 @@ export default function UiuxDetails({ data }) {
                 {titletext.map((item, index) => {
                   return <AnimatedText {...item} key={index} />
                 })}
-
-                {/* {placeholderText.map((item, index) => {
-                  return <AnimatedText {...item} key={index} />;
-                })} */}
               </div>
             </motion.div>
             <div className={styles.featured}>
@@ -140,10 +125,6 @@ export default function UiuxDetails({ data }) {
                       {datetext.map((item, index) => {
                         return <AnimatedText {...item} key={index} />
                       })}
-
-                      {/* {placeholderText.map((item, index) => {
-                        return <AnimatedText {...item} key={index} />;
-                      })} */}
                     </div>
                   </motion.div>
                 </div>

@@ -20,9 +20,8 @@ export default function Contacts() {
             </div>
             <div className={styles.info}>
               <p>
-                {/* Email: hello@annaozola.com */}
                 Email: {' '}
-                <Obfuscate email="teesannalv@gmail.com" />
+                <Obfuscate email="hello@annaozola.com" />
                 <br />
                 Phone: <Obfuscate tel="+371 28635159" />
               </p>

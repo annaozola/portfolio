@@ -22,7 +22,7 @@ export default function Home() {
       sessionStorage.setItem("showSplashScreen", false);
       setTimeout (() => {
         setLoading(false);
-      }, 2000)
+      }, 2000, [])
     }
     else {
       setLoading(false);
@@ -66,7 +66,6 @@ export default function Home() {
                 <div className={styles.getintouch}>
                   <h4>Get in touch</h4>
                   <p>
-                    {/* Email: hello@annaozola.com */}
                     Email: {' '}
                     <Obfuscate email="teesannalv@gmail.com" />
                     <br />
