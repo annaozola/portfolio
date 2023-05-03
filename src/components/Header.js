@@ -130,22 +130,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            {/* <div className="header__getintouchwrapper">
-                <div className="grid">
-                    <div className="header__getintouchwrapper__getintouch">
-                        <h4>Get in touch</h4>
-                        <p>
-                            Email: {' '}
-                            <Obfuscate email="teesannalv@gmail.com" />
-                            <br />
-                            Phone: <Obfuscate tel="+371 28635159" />
-                        </p>
-                        <div className="btn">
-                            <h5>Download My Resume</h5>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }

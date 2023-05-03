@@ -45,12 +45,12 @@ export default function Home() {
             <Showreel />
             <div className={styles.showreelinfo}>
               <div className={styles.sricontainer}>
-                <h4>UI Showreel</h4>
-                <p>UI animations were created using Adobe After Effects.</p>
+                <h4>EFL Animated UI</h4>
+                <p>Animated UI was created in Adobe After Effects.</p>
               </div>
               <div className={styles.sricontainer}>
                 <h5>
-                  <a href="https://vimeo.com/822083951?share=copy">View reel</a>
+                  <a href="https://vimeo.com/822083951?share=copy">View video</a>
                 </h5>
               </div>
             </div>
@@ -83,7 +83,6 @@ export default function Home() {
           </section>
         </Wrapper>
       </Layout>
-
       )}
     </>
   )
