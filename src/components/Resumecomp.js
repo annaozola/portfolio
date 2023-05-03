@@ -14,7 +14,7 @@ export default function Resumecomp() {
         <div className="grid info">
             <div className="info__contacts">
                 <p>
-                    <Obfuscate email="teesannalv@gmail.com" />
+                    <Obfuscate email="hello@annaozola.com" />
                     <br />
                     <Obfuscate tel="+371 28635159" />
                     <br />
@@ -35,7 +35,7 @@ export default function Resumecomp() {
                 <ul>
                     <li><a href="https://www.artstation.com/annaozola">Artstation: @annaozola</a></li>
                     <li><a href="https://www.instagram.com/annacgfx/">Instagram @annacgfx</a></li>
-                    <li><a href="https://vimeo.com/annacgfx">Vimeo: @annaozola</a></li>
+                    <li><a href="https://vimeo.com/annaozola">Vimeo: @annaozola</a></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +45,7 @@ export default function Resumecomp() {
                 <hr />
             </div>
             <div className="skills__prglng__one"><h6>Prg. Languages, Libraries and Platforms</h6></div>
-            <div className="skills__prglng__two"><p>HTML, CSS, JavaScript, SCSS, React, GatsbyJS, WordPress</p></div>
+            <div className="skills__prglng__two"><p>HTML, CSS, JavaScript, SCSS, React, GatsbyJS, WordPress, Framer Motion</p></div>
             <div className="skills__lang__one"><h6>Languages</h6></div>
             <div className="skills__lang__two"><p>Latvian, English, Russian (beginner)</p></div>
             <div className="skills__apps__headings__one"><h6>Applications</h6></div>
@@ -87,9 +87,9 @@ export default function Resumecomp() {
                 <hr />
             </div>
             <div className="experience__one"><p><span>BSMS</span> - Student Intern <br />Sept 2020 - Oct 2020</p></div>
-            <div className="experience__two"><p>Drew a storyboard and ideas for a video advertisement, as well as helped film the video. Designed an e-mail blast message. Developed a prototype for a website improvement idea I had in mind. Planned a corporate event. Created presentations.</p></div>
+            <div className="experience__two"><p>Created web design and designed an e-mail blast message. Created presentations. Drew a storyboard concept for a video advertisement that I helped film. Planned a corporate event for a client.</p></div>
             <div className="experience__one"><p><span>PickleHosting</span> - Technician <br />May 2015 - Sep 2015</p></div>
-            <div className="experience__two"><p>Fixed issues related to Minecraft servers, domains and hosting. Replied to tickets.</p></div>
+            <div className="experience__two"><p>Fixed issues related to Minecraft servers, domains and hosting. Replied to customer support tickets.</p></div>
         </div>
         <div className="grid education">
             <div className="education__header">

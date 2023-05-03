@@ -24,7 +24,6 @@ export default function MediaDetails({ data }) {
   const { body } = data.mdx
   const { title, date, role, technologies, featuredImg } = data.mdx.frontmatter
 
-  // I don't think I need this anymore - replay
   const [replay, setReplay] = useState(true);
 
   // Title

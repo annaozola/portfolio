@@ -37,7 +37,7 @@ export default function Projects({ data }) {
       <Wrapper>
         <section className={styles.projects}>
           <div className={styles.header}>
-              <h1>Projects</h1>
+            <h1>Projects</h1>
           </div>
           <div className={styles.portfolio}>
             <div className={styles.categories}>

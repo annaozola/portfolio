@@ -2,7 +2,7 @@ import React from 'react'
 import Obfuscate from 'react-obfuscate'
 import { Link } from 'gatsby'
 import '../styles/global.scss'
-import resumePDF from "../../static/anna-ozola-resume-unfinished.pdf"
+import resumePDF from "../../static/Anna_Ozola_CV_v1.pdf"
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
               <h3>Get in touch</h3>
               <p>
                 Email: {' '}
-                <Obfuscate email="teesannalv@gmail.com" />
+                <Obfuscate email="hello@annaozola.com" />
                 <br />
                 Phone: <Obfuscate tel="+371 28635159" />
               </p>
@@ -31,7 +31,7 @@ export default function Footer() {
                     <li><a href="https://annaozola.com/">GitHub</a></li>
                     <li><a href="https://www.artstation.com/annaozola">Artstation</a></li>
                     <li><a href="https://www.instagram.com/annacgfx/">Instagram</a></li>
-                    <li><a href="https://vimeo.com/annacgfx">Vimeo</a></li>
+                    <li><a href="https://vimeo.com/annaozola">Vimeo</a></li>
                 </ul>
               </div>
             </div>

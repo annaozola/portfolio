@@ -8,7 +8,7 @@ import Header from '../components/Header'
 
 import Splash from "../components/Splash"
 
-import AnimatedCharacters from "../components/AnimatedText"
+import resumePDF from "../../static/Anna_Ozola_CV_v1.pdf"
 
 import * as styles from '../styles/home.module.scss'
 
@@ -29,57 +29,6 @@ export default function Home() {
     }
   })
 
-  // Framer motion
-  // Heading
-  const headingtext = [
-    {
-      type: "heading1",
-      text: "I create digital design",
-    }
-  ]
-
-  const showreeltitle = [
-    {
-      type: "heading4",
-      text: "UI showreel"
-    }
-  ]
-
-  const showreelparagraph = [
-    {
-      type: "paragraph",
-      text: "Longer, general showreel coming soon."
-    }
-  ]
-
-  const abouttitle = [
-    {
-      type: "heading2",
-      text: "About"
-    }
-  ]
-
-  const aboutp1 = [
-    {
-      type: "paragraph",
-      text: "I'm Anna - a versatile digital designer and web developer, born and raised in Riga, Latvia, interested in both local and international employment opportunities. My most important values feature compassion, communication, experimentation and continuous learning. I spend a lot of my free time expanding my design and web development knowledge, as well as learning new unrelated skills. At the moment, I'm learning React for web develoment. So far, learning React has been a fun and challenging journey."
-    }
-  ]
-
-  const aboutp2 = [
-    {
-      type: "paragraph",
-      text: "I often work on personal projects such as fan-made levels or textures for video games. I also enjoy skateboarding, reading and playing multiplayer video games. On Saturtday nights you're bound to find me healing teammates in European Hell Let Loose lobbies or participating in Chivalry 2 battles."
-    }
-  ]
-
-  const contactstitle = [
-    {
-      type: "heading2",
-      text: "Get in touch"
-    }
-  ]
-
   return (
     <>
       {loading ? (
@@ -90,7 +39,7 @@ export default function Home() {
         <Header />
         <Wrapper>
           <section className={styles.home}>
-            {/* <div className={styles.heading}>
+            <div className={styles.heading}>
               <h1>I create digital design.</h1>
             </div>
             <Showreel />
@@ -104,7 +53,7 @@ export default function Home() {
                   <a href="https://vimeo.com/822083951?share=copy">View reel</a>
                 </h5>
               </div>
-            </div> */}
+            </div>
             <div className={styles.about}>
               <h2>About</h2>
               <div className={styles.grid}>
@@ -124,7 +73,9 @@ export default function Home() {
                     Phone: <Obfuscate tel="+371 28635159" />
                   </p>
                   <div className={styles.btn}>
-                    <h5>Download My Resume</h5>
+                    <a href={resumePDF} download>
+                      <h5>Download My Resume</h5>
+                    </a>
                   </div>
                 </div>
               </div>
