@@ -34,8 +34,6 @@
 
 ## About the project
 
-<hr>
-
 <p>
   I used this project as a learning experience to try out technologies I hadn't used before. It was a lot of fun and of course struggle to build a website from scratch using tools that were foreign to me. I would describe the process as a success because I learned a lot. Of course, as it always seems to be, designing for yourself tends to be harder than designing for a someone else, so I will always be unhappy with personal designs and keep working on improvements. I suppose it's a good thing? Can be quite tedious though.
 </p>
