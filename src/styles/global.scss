@@ -9,7 +9,6 @@ $white: #ffffff;
 $green: #0bec56;
 
 // Padding variables
-// Left, right side padding
 $desktop-padding: 0 7.5rem;
 $mobile-padding: 0 2rem;
 
@@ -142,7 +141,7 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 .links a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem; // OG - 0.875rem
+    font-size: 1rem;
     font-family: $mainfont;
     font-weight: 800;
     color: $white;
@@ -182,7 +181,7 @@ hr {
 // Header and navbar
 .navbar {
     background-color: $black;
-    height: 4rem; // was 60px before
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -259,7 +258,7 @@ hr {
     transition: 0.3s ease-in-out;
     padding: 6rem 0rem 0rem 2rem;
 
-    // hide scrollbar
+    // Hide scrollbar
     overflow: hidden;
 
     @media screen and (max-height: 580px) {
@@ -501,16 +500,11 @@ footer {
     overflow: hidden;
 }
 
-// Splash screen, fake pre-loader
-
-// #splash-container {
-//     display: none;
-// }
-
+// Splash screen
 .splash {
     display: flex;
     align-items: center;
-    height: 100vh; // change to 100% if necessary
+    height: 100vh;
     z-index: 999999;
 
     svg {
@@ -519,13 +513,8 @@ footer {
     }
 }
 
-// Animated text
-// .word-wrapper {
-//     white-space: nowrap;
-// }
-
+// Framer motion container
 .mocontainer {
-    // display: flex;
     word-wrap: break-word;
 }
 

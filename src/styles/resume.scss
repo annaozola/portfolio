@@ -17,7 +17,7 @@ $green: #0bec56;
     }
 
     .info {
-        padding: 0 0 5em 0; //configure later
+        padding: 0 0 5em 0;
 
         &__contacts {
             grid-column: 1/2;
@@ -70,7 +70,7 @@ $green: #0bec56;
     }
 
     .skills {
-        padding: 0 0 5em 0; // configure later
+        padding: 0 0 5em 0;
 
         &__header {
             grid-column: 1/5;
@@ -133,7 +133,7 @@ $green: #0bec56;
     }
 
     .experience {
-        padding: 0 0 5em 0; // configure later
+        padding: 0 0 5em 0;
 
         span {
             font-weight: 800;
@@ -153,7 +153,7 @@ $green: #0bec56;
     }
 
     .education {
-        padding: 0 0 8.25em 0; // configure later
+        padding: 0 0 8.25em 0;
 
         span {
             font-weight: 800;
@@ -173,7 +173,7 @@ $green: #0bec56;
     }
 }
 
-// Can probably REMOVE THIS as it's mentioned in global.scss
+// Global grid
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
