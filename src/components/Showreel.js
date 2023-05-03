@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ReactPlayer from 'react-player'
 import '../styles/global.scss'
 import '../styles/showreel.scss'
-import showreelVideo from '../../static/showreel-temp.mp4'
+import showreelVideo from '../../static/EFLAnimatedNewX145_final.mp4'
 
 export default function Showreel({ mouseOverEvent, mouseOutEvent }) {
 

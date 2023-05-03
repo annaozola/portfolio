@@ -528,3 +528,17 @@ footer {
     // display: flex;
     word-wrap: break-word;
 }
+
+// 404 page
+.unknownpage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -90,21 +90,21 @@ export default function Home() {
         <Header />
         <Wrapper>
           <section className={styles.home}>
-            <div className={styles.heading}>
+            {/* <div className={styles.heading}>
               <h1>I create digital design.</h1>
             </div>
             <Showreel />
             <div className={styles.showreelinfo}>
               <div className={styles.sricontainer}>
-                <h4>UI showreel</h4>
-                <p>Longer, general showreel coming soon.</p>
+                <h4>UI Showreel</h4>
+                <p>UI animations were created using Adobe After Effects.</p>
               </div>
               <div className={styles.sricontainer}>
                 <h5>
-                  <a href="https://vimeo.com/manage/videos/551378240">View reel</a>
+                  <a href="https://vimeo.com/822083951?share=copy">View reel</a>
                 </h5>
               </div>
-            </div>
+            </div> */}
             <div className={styles.about}>
               <h2>About</h2>
               <div className={styles.grid}>
