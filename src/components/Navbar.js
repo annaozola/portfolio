@@ -25,7 +25,7 @@ export default function Navbar() {
 
   if(showMenu) {
     menu = 
-    <div className="mobile-navbar">
+    <nav className="mobile-navbar">
       <HiOutlineX onClick={() => setShowMenu(!showMenu)} className="mobile-navbar__toggle" />
 
       <div className="mobile-navbar__nav links">
@@ -37,7 +37,7 @@ export default function Navbar() {
         <Link to="/contacts" activeClassName="active">Contacts</Link>
         <Link to="/resume" activeClassName="active">Résumé</Link>
       </div>
-    </div>
+    </nav>
   }
 
   return (
