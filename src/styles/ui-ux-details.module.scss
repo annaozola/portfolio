@@ -1,7 +1,17 @@
-// Font variables
-$headerfont: "Basement Grotesque", sans-serif;
-$mainfont: "Spline Sans", sans-serif;
+// Font imports
+// Basement Grotesque
+@font-face {
+    font-family: 'Basement Grotesque';
+    src: url('../../static/fonts/BasementGrotesque-Black_v1.202.woff2') format('woff2'),
+        url('../../static/fonts/BasementGrotesque-Black_v1.202.woff') format('woff');
+}
 
+// Spline Sans
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
+// Font variables
+$headerfont: 'Basement Grotesque', sans-serif;
+$mainfont: 'Spline Sans', sans-serif;
 // Color variables
 $black: #000000;
 $darkgrey: #1d1d1d;
