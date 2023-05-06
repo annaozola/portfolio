@@ -1,6 +1,17 @@
+// Font imports
+// Basement Grotesque
+@font-face {
+    font-family: 'Basement Grotesque';
+    src: url('../../static/fonts/BasementGrotesque-Black_v1.202.woff2') format('woff2'),
+        url('../../static/fonts/BasementGrotesque-Black_v1.202.woff') format('woff');
+}
+
+// Spline Sans
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
 // Font variables
-$headerfont: "Basement Grotesque", sans-serif;
-$mainfont: "Spline Sans", sans-serif;
+$headerfont: 'Basement Grotesque', sans-serif;
+$mainfont: 'Spline Sans', sans-serif;
 
 // Color variables
 $black: #000000;
@@ -22,12 +33,16 @@ $mobile-padding: 0 2rem;
         .categories {
             padding-bottom: 2rem;
 
-            button {
-                margin: 0rem 0.875rem 0rem 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.875rem;
 
-                &:last-child {
-                    margin-right: 0px;
-                }
+            button {
+                // margin: 0rem 0.875rem 0rem 0rem;
+
+                // &:last-child {
+                //     margin-right: 0px;
+                // }
 
                 &:focus {
                     background-color: rgba($green, 0.14);

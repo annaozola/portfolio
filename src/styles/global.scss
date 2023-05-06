@@ -1,6 +1,17 @@
+// Font imports
+// Basement Grotesque
+@font-face {
+    font-family: 'Basement Grotesque';
+    src: url('../../static/fonts/BasementGrotesque-Black_v1.202.woff2') format('woff2'),
+        url('../../static/fonts/BasementGrotesque-Black_v1.202.woff') format('woff');
+}
+
+// Spline Sans
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
 // Font variables
-$headerfont: "Basement Grotesque", sans-serif;
-$mainfont: "Spline Sans", sans-serif;
+$headerfont: 'Basement Grotesque', sans-serif;
+$mainfont: 'Spline Sans', sans-serif;
 
 // Color variables
 $black: #000000;
@@ -60,24 +71,28 @@ h1 {
     color: $white;
     font-family: $headerfont;
     font-size: 3rem;
+    font-weight: normal;
 }
 
 h2 {
     color: $white;
     font-family: $headerfont;
     font-size: 2rem;
+    font-weight: normal;
 }
 
 h3 {
     color: $white;
     font-family: $headerfont;
     font-size: 1.125rem;
+    font-weight: normal;
 }
 
 h4 {
     color: $white;
     font-family: $headerfont;
     font-size: 1rem;
+    font-weight: normal;
 }
 
 h5 {
@@ -91,7 +106,7 @@ h6 {
     color: $white;
     font-family: $mainfont;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 p {
@@ -256,7 +271,7 @@ hr {
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    padding: 6rem 0rem 0rem 2rem;
+    padding: 4rem 0rem 0rem 2rem;
 
     // Hide scrollbar
     overflow: hidden;
@@ -284,8 +299,8 @@ hr {
         flex-wrap: wrap;
         
         a {
-            font-size: 2.5rem;
-            padding-bottom: 2rem;
+            font-size: 2rem;
+            padding-bottom: 1.2rem;
 
             @media screen and (max-height: 580px) {
                 font-size: 2rem;
@@ -341,6 +356,10 @@ footer {
 
             a {
                 text-decoration: none;
+
+                :hover {
+                    text-decoration: underline;
+                }
             }
 
             h3 {

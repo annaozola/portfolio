@@ -6,13 +6,20 @@ $green: #0bec56;
 
 .header {
     &__container {
-
         width: 100%;
         height: 100vh;
         background-image: url('../images/header/pS1-3-2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 60% 40%;
+
+        // Makes heading text readable
+        @media screen and (max-width: 768px) {
+            box-shadow: inset 0 -64em 64em -64em $black,
+                        inset 0 -64em 64em -64em $black,
+                        inset 0 -64em 64em -64em $black,
+                        inset 0 -20em 20em -20em $black;
+        }
     }
 
     &__aboutwrapper {

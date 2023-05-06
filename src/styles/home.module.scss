@@ -1,6 +1,17 @@
+// Font imports
+// Basement Grotesque
+@font-face {
+    font-family: 'Basement Grotesque';
+    src: url('../../static/fonts/BasementGrotesque-Black_v1.202.woff2') format('woff2'),
+        url('../../static/fonts/BasementGrotesque-Black_v1.202.woff') format('woff');
+}
+
+// Spline Sans
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
 // Font variables
-$headerfont: "Basement Grotesque", sans-serif;
-$mainfont: "Spline Sans", sans-serif;
+$headerfont: 'Basement Grotesque', sans-serif;
+$mainfont: 'Spline Sans', sans-serif;
 
 // Color variables
 $black: #000000;
@@ -12,6 +23,14 @@ $green: #0bec56;
 .home {
     .heading {
         padding: 8.25em 0 4.625em 0;
+
+        @media screen and (max-width:768px) {
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 2em;
+            margin-right: 2em;
+        }
     }
 
     .showreelinfo {
@@ -21,6 +40,11 @@ $green: #0bec56;
 
         @media screen and (max-width: 1500px) {
             padding: 2.125em 0 2.125em 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            visibility: hidden;
+            display: none;
         }
 
         .sricontainer {
