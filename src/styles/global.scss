@@ -271,7 +271,7 @@ hr {
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    padding: 6rem 0rem 0rem 2rem;
+    padding: 4rem 0rem 0rem 2rem;
 
     // Hide scrollbar
     overflow: hidden;
@@ -299,8 +299,8 @@ hr {
         flex-wrap: wrap;
         
         a {
-            font-size: 2.5rem;
-            padding-bottom: 2rem;
+            font-size: 2rem;
+            padding-bottom: 1.2rem;
 
             @media screen and (max-height: 580px) {
                 font-size: 2rem;

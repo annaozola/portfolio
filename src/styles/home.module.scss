@@ -23,6 +23,14 @@ $green: #0bec56;
 .home {
     .heading {
         padding: 8.25em 0 4.625em 0;
+
+        @media screen and (max-width:768px) {
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 2em;
+            margin-right: 2em;
+        }
     }
 
     .showreelinfo {
@@ -32,6 +40,11 @@ $green: #0bec56;
 
         @media screen and (max-width: 1500px) {
             padding: 2.125em 0 2.125em 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            visibility: hidden;
+            display: none;
         }
 
         .sricontainer {

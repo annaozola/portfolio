@@ -22,6 +22,11 @@
     width: 100%;
     display: flex;
 
+    @media screen and (max-width: 768px) {
+        visibility: hidden;
+        display: none;
+    }
+
     &__wrapper {
         height: 300px;
         width: 100%;

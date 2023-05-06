@@ -33,12 +33,16 @@ $mobile-padding: 0 2rem;
         .categories {
             padding-bottom: 2rem;
 
-            button {
-                margin: 0rem 0.875rem 0rem 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.875rem;
 
-                &:last-child {
-                    margin-right: 0px;
-                }
+            button {
+                // margin: 0rem 0.875rem 0rem 0rem;
+
+                // &:last-child {
+                //     margin-right: 0px;
+                // }
 
                 &:focus {
                     background-color: rgba($green, 0.14);
