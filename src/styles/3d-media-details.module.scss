@@ -12,20 +12,28 @@
 // Font variables
 $headerfont: 'Basement Grotesque', sans-serif;
 $mainfont: 'Spline Sans', sans-serif;
-
 // Color variables
 $black: #000000;
 $darkgrey: #1d1d1d;
 $white: #ffffff;
 $green: #0bec56;
 
+// Details
 .details {
     h1 {
         padding: 0 0 4.625rem 0;
+
+        @media screen and (max-width: 480px) {
+            padding: 0 0 2.625rem;
+        }
     }
 
     .header {
         padding: 8.25rem 0rem 4.625rem 0rem;
+
+        @media screen and (max-width: 480px) {
+            padding: 6.25rem 0rem 4.625rem 0rem;
+        }
 
         .featured {
             position: relative;
@@ -80,4 +88,8 @@ $green: #0bec56;
     margin: 0 auto;
     grid-gap: 2em;
     position: relative;
+
+    @media screen and (max-width: 480px) {
+        grid-gap: 1.2em;
+    }
 }

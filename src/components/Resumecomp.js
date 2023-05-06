@@ -73,6 +73,7 @@ export default function Resumecomp() {
                     <li>Lightroom</li>
                 </ul>
             </div>
+            <div className="skills__apps__headings__fourmobile"><h6>Video Media</h6></div>
             <div className="skills__apps__content__three">
                 <ul>
                     <li>DaVinci Resolve</li>
@@ -88,7 +89,7 @@ export default function Resumecomp() {
             </div>
             <div className="experience__one"><p><span>BSMS</span> - Student Intern <br />Sept 2020 - Oct 2020</p></div>
             <div className="experience__two"><p>Created web design and designed an e-mail blast message. Created presentations. Drew a storyboard concept for a video advertisement that I helped film. Planned a corporate event for a client.</p></div>
-            <div className="experience__one"><p><span>PickleHosting</span> - Technician <br />May 2015 - Sep 2015</p></div>
+            <div className="experience__one experience__onemob"><p><span>PickleHosting</span> - Technician <br />May 2015 - Sep 2015</p></div>
             <div className="experience__two"><p>Fixed issues related to Minecraft servers, domains and hosting. Replied to customer support tickets.</p></div>
         </div>
         <div className="grid education">

@@ -69,8 +69,16 @@ a {
     &__summary {
         padding-bottom: 5.625rem;
 
+        @media screen and (max-width: 768px) {
+            padding-bottom: 0;
+        }
+
         h2 {
             padding-bottom: 3.125rem;
+
+            @media screen and (max-width: 768px) {
+                padding-bottom: 1rem;
+            }
         }
 
         // Social links, wraps around social
@@ -91,6 +99,7 @@ a {
 
         @media screen and (max-width: 768px) {
             grid-template-columns: 1fr;
+            grid-gap: 2em;
         }
     }
 
@@ -116,10 +125,22 @@ a {
     // Spacing that wraps a paragraph
     &__pspacing {
         padding: 8.25em 0 8.25em 0;
+
+        @media screen and (max-width: 768px) {
+            padding: 4rem 0 4rem 0;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 2rem 0 2rem 0;
+        }
     }
 
     &__pspacing2 {
         padding-top: 3.125rem;
+
+        @media screen and (max-width: 768px) {
+            padding-top: 1.2rem;
+        }
     }
 
     // View project on social media and other websites
@@ -199,6 +220,10 @@ a {
 
     &__prefooter {
         padding: 4em 0;
+
+        @media screen and (max-width: 768px) {
+            padding: 2em 0;
+        }
     }
 }
 

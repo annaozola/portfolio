@@ -61,7 +61,7 @@ export default function Home() {
                   <p>I'm Anna - a versatile digital designer and web developer, born and raised in Riga, Latvia. I spend a lot of my free time expanding my design and development knowledge. Recently, I have realized that I am very passionate about 3D CGI and VFX so I tend to work on 3D CGI projects whenever I can.</p>
                 </div>
                 <div className={styles.about2}>
-                  <p>I enjoy skateboarding, reading and playing multiplayer video games. On Saturtday nights you're bound to find me healing teammates in European Hell Let Loose lobbies or fighting in Chivalry 2 battles.</p>
+                  <p>I enjoy skateboarding, reading and playing multiplayer video games. On Friday nights you're bound to find me healing teammates in European Hell Let Loose lobbies or dueling in Chivalry 2.</p>
                 </div>
                 <div className={styles.getintouch}>
                   <h4>Get in touch</h4>
