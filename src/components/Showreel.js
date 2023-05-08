@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
-import ReactPlayer from 'react-player'
+import React, { useState, Suspense } from 'react'
+// import ReactPlayer from 'react-player'
 import '../styles/global.scss'
 import '../styles/showreel.scss'
 import showreelVideo from '../../static/EFLAnimatedNewX145_final.mp4'
 
 export default function Showreel({ mouseOverEvent, mouseOutEvent }) {
+
+    const ReactPlayer = React.lazy(() => import("react-player"))
 
     const [play, setPlay] = useState(false);
 
@@ -27,6 +29,7 @@ export default function Showreel({ mouseOverEvent, mouseOutEvent }) {
       onBlur={mouseOutEvent}
       >
       <div className="showreel__wrapper">
+        <Suspense fallback={<div>Loading...</div>}>
         <ReactPlayer
         className='react-player'
         url={showreelVideo}
@@ -37,6 +40,7 @@ export default function Showreel({ mouseOverEvent, mouseOutEvent }) {
         muted
         loop={true}
         />
+        </Suspense>
       </div>
     </div>
   )
