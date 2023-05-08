@@ -6,6 +6,7 @@ module.exports = {
     copyright: 'Copyright 2022 Anna Ozola',
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
