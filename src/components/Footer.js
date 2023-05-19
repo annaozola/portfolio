@@ -2,7 +2,7 @@ import React from 'react'
 import Obfuscate from 'react-obfuscate'
 import { Link } from 'gatsby'
 import '../styles/global.scss'
-import resumePDF from "../../static/Anna_Ozola_CV_v1.pdf"
+import resumePDF from "../../static/Anna_Ozola_Resume.pdf"
 
 export default function Footer() {
   return (

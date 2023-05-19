@@ -8,7 +8,7 @@ import '../styles/global.scss'
 import '../styles/header.scss'
 import Obfuscate from "react-obfuscate"
 
-import resumePDF from "../../static/Anna_Ozola_CV_v1.pdf"
+import resumePDF from "../../static/Anna_Ozola_Resume.pdf"
 
 export default function Header() {
 
