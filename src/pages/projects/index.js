@@ -1,6 +1,7 @@
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { SEO } from '../../components/Seo'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useMemo } from 'react'
@@ -94,3 +95,7 @@ query ProjectsPage {
   }
 }
 `
+
+export const Head = () => (
+  <SEO title="Projects" />
+)

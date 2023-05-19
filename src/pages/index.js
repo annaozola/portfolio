@@ -1,4 +1,5 @@
 import React from "react"
+import { SEO } from "../components/Seo"
 import { useState, useEffect } from "react"
 import Obfuscate from "react-obfuscate"
 import Layout from '../components/Layout'
@@ -86,3 +87,7 @@ export default function Home() {
     </>
   )
 }
+
+export const Head = () => (
+  <SEO />
+)

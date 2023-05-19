@@ -3,7 +3,8 @@ module.exports = {
     title: `Anna Ozola`,
     description: `Portfolio`,
     author: `Anna Ozola`,
-    copyright: 'Copyright 2022 Anna Ozola',
+    copyright: 'Copyright 2023 Anna Ozola',
+    siteUrl: `https://www.annaozola.com`,
   },
   plugins: [
     `gatsby-plugin-netlify`,

@@ -1,4 +1,5 @@
 import React from 'react'
+import { SEO } from '../components/Seo'
 import Layout from '../components/Layout'
 import Wrapper from '../components/Wrapper'
 import Obfuscate from "react-obfuscate"
@@ -32,3 +33,7 @@ export default function Contacts() {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO title="Contacts" />
+)
