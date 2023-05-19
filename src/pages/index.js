@@ -8,7 +8,7 @@ import Header from '../components/Header'
 
 import Splash from "../components/Splash"
 
-import resumePDF from "../../static/Anna_Ozola_CV_v1.pdf"
+import resumePDF from "../../static/Anna_Ozola_Resume.pdf"
 
 import * as styles from '../styles/home.module.scss'
 
