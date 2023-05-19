@@ -1,6 +1,7 @@
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { SEO } from '../../../components/Seo'
 import Layout from '../../../components/Layout'
 import Wrapper from '../../../components/Wrapper'
 import * as styles from '../../../styles/projects.module.scss'
@@ -67,3 +68,7 @@ query WebdndPage {
   }
 }
 `
+
+export const Head = () => (
+  <SEO title="Web Design and Development" />
+)
