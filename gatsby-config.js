@@ -1,12 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: `Anna Ozola`,
-    description: `Portfolio`,
+    title: `Anna Ozola Portfolio`,
+    description: `Anna Ozola Portfolio`,
     author: `Anna Ozola`,
     copyright: 'Copyright 2023 Anna Ozola',
     siteUrl: `https://www.annaozola.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-LZJZC6ZZLD", // Google Analytics / GA
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Defaults to https://www.googletagmanager.com
+          origin: "YOUR_SELF_HOSTED_ORIGIN",
+          // Delays processing pageview events on route update (in milliseconds)
+          delayOnRouteUpdate: 0,
+        },
+      },
+    },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-sass`,
