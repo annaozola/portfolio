@@ -1,7 +1,4 @@
 <!-- README START -->
-
-![banner](https://s3-alpha-sig.figma.com/hub/profile/846030581982914609/0fc6a492-747c-46ee-ba34-02a9911f3c73_cover?Expires=1684108800&Signature=oeupvhh~XC0eJ6SY8A4MIjn3L2VwPc83EaqwpKIYmz1tjxxVpIDt1gVaNgfw2WGyKZFVnX67Ghm7KqsZzqwx9iPdKjjPEiKbjvr2E8qmjPDQxLo1p4vqSyjjuKDLinawdv1YB9y3oem9YKKwXYaq4sWx4EMMOYsJXqnVRPGMoADmEyuqneX8PutfqJm5s1QG5H10Ik0-vsbdIddCQZlLUbrvHRT3s2NWhSWx4EU8-SSvoAKOKP9iO1cpuvQ9gV3n-UsMw2fCmRxA0T-m5suB8waWgPat3YOEpJIUWYd1ZMsLjAOAfuEJ4Clt5knWVlyfe9wPja6N1Mlusv2N9LQAuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4)
-
 <br />
 
 <h1 align="center">
