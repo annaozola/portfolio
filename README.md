@@ -17,7 +17,7 @@
     <img alt="React" src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" width="50"/>
   </a>
   <a href="https://sass-lang.com/">
-    <img alt="Sass" src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" width="65"/>
+    <img alt="Sass" src="https://cdn-icons-png.flaticon.com/512/5968/5968358.png" width="65"/>
   </a>
   <a href="https://mdxjs.com/">
     <img alt="MDX" src="https://camo.githubusercontent.com/a1ed609909277603e99737322eba7be62d52eea6428f91678f2a74f2180de507/68747470733a2f2f6d64782d6c6f676f2e6e6f772e7368" width="100"/>
