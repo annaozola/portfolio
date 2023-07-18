@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Anna Ozola Portfolio`,
+    title: `Anna Ozola`,
     description: `Anna Ozola Portfolio`,
     author: `Anna Ozola`,
     copyright: 'Copyright 2023 Anna Ozola',
@@ -14,14 +14,23 @@ module.exports = {
         trackingIds: [
           "G-LZJZC6ZZLD", // Google Analytics / GA
         ],
+        gtagConfig: {
+          optimize_id: "OPT_CONTIANER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
         // This object is used for configuration specific to this plugin
         pluginConfig: {
           // Puts tracking script in the head instead of the body
           head: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
           // Defaults to https://www.googletagmanager.com
-          origin: "YOUR_SELF_HOSTED_ORIGIN",
+          // origin: "YOUR_SELF_HOSTED_ORIGIN",
           // Delays processing pageview events on route update (in milliseconds)
-          delayOnRouteUpdate: 0,
+          // delayOnRouteUpdate: 0,
         },
       },
     },
