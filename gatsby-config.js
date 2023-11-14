@@ -3,7 +3,7 @@ module.exports = {
     title: `Anna Ozola`,
     description: `Anna Ozola Portfolio`,
     author: `Anna Ozola`,
-    copyright: 'Copyright 2023 Anna Ozola',
+    copyright: "Copyright 2023 Anna Ozola",
     siteUrl: `https://www.annaozola.com`,
   },
   plugins: [
@@ -57,7 +57,7 @@ module.exports = {
     `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-remark-copy-linked-files`,
       options: {},
@@ -74,10 +74,10 @@ module.exports = {
               quality: 100,
               maxWidth: 1200,
               path: `${__dirname}/src/images`,
-            }
-          }
-        ]
-      }
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-mdx`,
@@ -91,10 +91,10 @@ module.exports = {
               quality: 100,
               maxWidth: 4096,
               path: `${__dirname}/src/images`,
-            }
+            },
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
