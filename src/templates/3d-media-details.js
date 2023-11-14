@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
@@ -9,6 +9,8 @@ import AnimatedText from '../components/AnimatedText'
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+
+import { SEO } from "../components/Seo"
 
 // I am using MULTIPLE STYLESHEET MODULES for now but this can be simplified to one later.
 import * as styles from '../styles/3d-media-details.module.scss'
@@ -199,3 +201,7 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = ({ data }) => (
+  <SEO title={data.mdx.frontmatter.title} />
+)

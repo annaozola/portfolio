@@ -10,6 +10,8 @@ import AnimatedText from '../components/AnimatedText'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
+import { SEO } from '../components/Seo'
+
 // I am using MULTIPLE STYLESHEET MODULES for now but this can be simplified to one later.
 import * as styles from '../styles/ui-ux-details.module.scss'
 
@@ -200,3 +202,6 @@ export const query = graphql`
     }
   }
 `
+export const Head = ({ data }) => (
+  <SEO title={data.mdx.frontmatter.title} />
+)
