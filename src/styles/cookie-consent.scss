@@ -1,0 +1,18 @@
+// Font variables
+$headerfont: "Basement Grotesque", sans-serif;
+$mainfont: "Spline Sans", sans-serif;
+
+// Color variables
+$black: #000000;
+$darkgrey: #1d1d1d;
+$white: #ffffff;
+$green: #0bec56;
+
+.cookie-banner {
+  background-color: $black;
+}
+
+.cookie-text {
+  font-family: $mainfont;
+  color: $white;
+}
