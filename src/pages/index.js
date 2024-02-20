@@ -12,6 +12,8 @@ import Splash from "../components/Splash"
 import resumePDF from "../../static/Anna_Ozola_Resume.pdf"
 
 import * as styles from "../styles/home.module.scss"
+import CookieConsent from "react-cookie-consent"
+import "../styles/cookie-consent.scss"
 
 export default function Home() {
   // Intro splash
@@ -96,6 +98,35 @@ export default function Home() {
           </Wrapper>
         </Layout>
       )}
+      <CookieConsent
+        style={{
+          background: "#000000",
+          color: "#ffffff",
+          fontFamily: "Spline Sans",
+          fontSize: "1rem",
+        }}
+        buttonStyle={{
+          background: "#0bec56",
+          color: "#000000",
+          fontFamily: "Spline Sans",
+          fontSize: "1rem",
+        }}
+        declineButtonStyle={{
+          background: "#ffffff",
+          color: "#000000",
+          fontFamily: "Spline Sans",
+          fontSize: "1rem",
+        }}
+        location="bottom"
+        buttonText="Accept"
+        declineButtonText="Decline"
+        cookieName="gatsby-gdpr-google-analytics"
+        enableDeclineButton
+      >
+        This website uses Google Analytics to analyze user flow for future
+        improvements. By agreeing to the use of cookies, you help improve the
+        site.
+      </CookieConsent>
     </>
   )
 }
