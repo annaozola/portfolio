@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="inner__contacts">
             <h3>Get in touch</h3>
             <p>
-              Email: <Obfuscate email="hello@annaozola.com" />
+              Email: <Obfuscate email="annacgfx@proton.me" />
             </p>
             <a href={resumePDF} download>
               <h6>

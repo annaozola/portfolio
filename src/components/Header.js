@@ -119,7 +119,7 @@ export default function Header() {
                 }}
               >
                 <p>
-                  Email: <Obfuscate email="hello@annaozola.com" />
+                  Email: <Obfuscate email="annacgfx@proton.me" />
                 </p>
                 <div className="btn">
                   <a href={resumePDF} download>

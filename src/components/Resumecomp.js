@@ -14,7 +14,7 @@ export default function Resumecomp() {
       <div className="grid info">
         <div className="info__contacts">
           <p>
-            <Obfuscate email="hello@annaozola.com" />
+            <Obfuscate email="annacgfx@proton.me" />
             <br />
             Currently located in
             <br />
